@@ -68,7 +68,6 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .footer-nav a{color:#d6ece1;margin-left:12px;text-decoration:none}
 .center{text-align:center;margin-top:18px}
 
-
 /* WhatsApp floating button */
 .wa-float{
   position:fixed; right:18px; bottom:18px;
@@ -79,6 +78,5 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .wa-float img{width:28px; height:28px; filter:brightness(0) invert(1)}
 .wa-float:hover{transform:translateY(-2px); transition:.2s}
 
-
-/* Header WhatsApp link emphasis */
+/* Emphasis for WA link in header */
 .main-nav a[href*="wa.me"]{font-weight:700}
