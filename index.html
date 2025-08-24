@@ -3,11 +3,204 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Metabosques</title>
+  <title>Metabosques | Soluciones integrales ambientales</title>
+  <meta name="description" content="Metabosques: restauración ecológica, compensaciones ambientales, aprovechamientos forestales y consultoría ambiental en Colombia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.png">
+  <meta name="theme-color" content="#0a6d63">
 </head>
 <body>
-  <h1>Bienvenido a Metabosques</h1>
-  <p>Sitio oficial en construcción.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Metabosques" class="logo">
+        <span class="brand-name">Metabosques</span>
+      </div>
+      <nav class="main-nav" id="nav"><a href="https://wa.me/573007925238?text=Hola%20Metabosques%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#alianzas">Alianzas</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contacto" class="btn btn-primary">Contáctanos</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>Regeneramos ecosistemas.<br>Protegemos biodiversidad.<br>Conectamos naturaleza y territorio.</h1>
+        <p class="lead">Soluciones integrales para restauración ecológica, compensaciones y manejo forestal con rigor técnico y enfoque territorial.</p>
+        <div class="cta-row"><a href="https://wa.me/573007925238?text=Hola%20Metabosques%2C%20quisiera%20informaci%C3%B3n" class="btn btn-outline" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+          <a href="#servicios" class="btn btn-primary">Nuestros servicios</a>
+          <a href="#proyectos" class="btn btn-outline">Explora proyectos</a>
+        </div>
+      </div>
+      <img src="assets/hero.jpg" alt="Bosque nublado" class="hero-bg" />
+    </section>
+
+    <section id="nosotros" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Nosotros</h2>
+          <p>Metabosques es una empresa ambiental colombiana con más de 15 años de experiencia acumulada en restauración ecológica, aprovechamientos forestales sostenibles, compensaciones bióticas y consultoría ambiental. Trabajamos con empresas, entidades públicas y comunidades para implementar soluciones basadas en ciencia, normativa vigente y participación local.</p>
+          <p>Bajo el liderazgo de <strong>Armith Moreno Montoya</strong>, ingeniero ambiental, estructuramos e implementamos proyectos medibles, trazables y sostenibles en diversos ecosistemas del país.</p>
+          <div class="kpis">
+            <div class="kpi"><span class="kpi-number" data-count="2500">0</span><span class="kpi-unit">ha</span><p>restauradas</p></div>
+            <div class="kpi"><span class="kpi-number" data-count="120000">0</span><span class="kpi-unit">+</span><p>árboles sembrados</p></div>
+            <div class="kpi"><span class="kpi-number" data-count="50">0</span><span class="kpi-unit">+</span><p>empresas aliadas</p></div>
+            <div class="kpi"><span class="kpi-number" data-count="20">0</span><span class="kpi-unit">+</span><p>proyectos con comunidades</p></div>
+          </div>
+        </div>
+        <div class="card photo">
+          <img src="assets/about.jpg" alt="Restauración ecológica en campo">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section alt">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Aprovechamientos Forestales Sostenibles</h3>
+            <p>Diseño, trámite y ejecución de planes de aprovechamiento forestal; inventarios; marcación y cubicación; y gestión técnica ante autoridades ambientales.</p>
+          </article>
+          <article class="service-card">
+            <h3>Restauración Ecológica y Compensaciones</h3>
+            <p>Diseño e implementación de planes de compensación biótica y forestal mediante reforestación activa, pasiva y enriquecimiento con especies nativas.</p>
+          </article>
+          <article class="service-card">
+            <h3>Consultoría Ambiental</h3>
+            <p>Estudios de impacto, planes de manejo, monitoreos de fauna y flora, SIG, y acompañamiento en licencias y permisos ambientales.</p>
+          </article>
+          <article class="service-card">
+            <h3>Mantenimiento y Obras Ambientales</h3>
+            <p>Rocería, mantenimiento locativo de áreas verdes, revegetalización, limpieza de paneles solares y obras civiles menores con criterios paisajísticos.</p>
+          </article>
+          <article class="service-card">
+            <h3>Mecanismos Innovadores – NaturaUnidad</h3>
+            <p>Soluciones basadas en naturaleza para metas corporativas de sostenibilidad, carbono y biodiversidad positiva, con indicadores verificables.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2>Explora proyectos</h2>
+        <p class="section-lead">Descubre proyectos de restauración y compensación ambiental en diferentes regiones y ecosistemas.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="assets/proj1.jpg" alt="Río Magdalena - restauración riparia">
+            <div class="project-body">
+              <h4>Conectividad Ribereña</h4>
+              <p>Restauración de corredores ribereños y monitoreo de biodiversidad asociada.</p>
+              <span class="badge">Bosque seco tropical</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="assets/proj2.jpg" alt="Revegetalización de taludes">
+            <div class="project-body">
+              <h4>Revegetalización de taludes</h4>
+              <p>Estabilización biotécnica con especies nativas y control de erosión.</p>
+              <span class="badge">Infraestructura vial</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="assets/proj3.jpg" alt="Restauración altoandina">
+            <div class="project-body">
+              <h4>Núcleos altoandinos</h4>
+              <p>Enriquecimiento y control de especies invasoras en áreas protegidas.</p>
+              <span class="badge">Alta montaña</span>
+            </div>
+          </article>
+        </div>
+        <div class="center">
+          <a href="#contacto" class="btn btn-primary">Quiero presentar mi proyecto</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="alianzas" class="section alt">
+      <div class="container">
+        <h2>Alianzas y certificaciones</h2>
+        <ul class="logos">
+          <li><img src="assets/logo1.svg" alt="Aliado 1"></li>
+          <li><img src="assets/logo2.svg" alt="Aliado 2"></li>
+          <li><img src="assets/logo3.svg" alt="Aliado 3"></li>
+          <li><img src="assets/logo4.svg" alt="Aliado 4"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="recursos" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Recursos</h2>
+          <p>Publicaciones técnicas, noticias y casos de éxito sobre restauración, biodiversidad y normativa ambiental.</p>
+          <ul class="resource-list">
+            <li><a href="#">Guía práctica para compensaciones bióticas (PDF)</a></li>
+            <li><a href="#">Monitoreo de fauna con cámaras trampa – caso de estudio</a></li>
+            <li><a href="#">Checklist normativo para aprovechamientos forestales</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>¿Quieres recibir novedades?</h3>
+          <p>Suscríbete para recibir artículos y convocatorias.</p>
+          <form onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+            <input type="email" placeholder="Tu correo" required>
+            <button class="btn btn-primary" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2>Contáctanos</h2>
+          <p>¿Eres una empresa con obligaciones ambientales? ¿Tienes un predio para restauración o conservación? Conversemos.</p>
+          <ul class="contact-list">
+            <li>📍 Medellín, Colombia</li>
+            <li>📞 +57 300 000 0000</li>
+            <li>✉️ contacto@metabosques.com</li>
+          </ul>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/amoreno@metabosques.com" method="POST">
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Correo" required>
+          <input type="tel" placeholder="Teléfono">
+          <textarea rows="5" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde metabosques.com"><input type="hidden" name="_template" value="box"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_next" value="https://metabosques.com/gracias.html"><input type="text" name="_honey" style="display:none"><button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Metabosques. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <a href="#privacidad">Política de privacidad</a>
+        <a href="#terminos">Términos y condiciones</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <a href="https://wa.me/573007925238?text=Hola%20Metabosques%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios."
+     class="wa-float" aria-label="Chat por WhatsApp" target="_blank" rel="noopener">
+    <img src="assets/wa.svg" alt="WhatsApp">
+  </a>
+
 </body>
 </html>
