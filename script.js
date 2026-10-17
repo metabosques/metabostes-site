@@ -115,5 +115,34 @@
   }
 
   curvas(document.getElementById('curvas'), { seed: 41, cerros: 9, niveles: 22, paso: 9, destacada: 13, animar: true });
-  curvas(document.getElementById('curvas-caso'), { seed: 7, cerros: 6, niveles: 16, paso: 8, destacada: 4, animar: false });
+
+  // Visor de fotos
+  var visor = document.getElementById('visor');
+  var botones = Array.prototype.slice.call(document.querySelectorAll('.foto-abrir'));
+  if (visor && botones.length && typeof visor.showModal === 'function') {
+    var vImg = document.getElementById('visor-img');
+    var vTxt = document.getElementById('visor-texto');
+    var vPos = document.getElementById('visor-pos');
+    var actual = 0, origen = null;
+    function mostrar(i) {
+      actual = (i + botones.length) % botones.length;
+      var img = botones[actual].querySelector('img');
+      vImg.src = img.getAttribute('data-grande');
+      vImg.alt = img.alt;
+      vTxt.textContent = img.alt;
+      vPos.textContent = (actual + 1) + ' de ' + botones.length;
+    }
+    botones.forEach(function (b, i) {
+      b.addEventListener('click', function () { origen = b; mostrar(i); visor.showModal(); });
+    });
+    document.getElementById('visor-ant').addEventListener('click', function () { mostrar(actual - 1); });
+    document.getElementById('visor-sig').addEventListener('click', function () { mostrar(actual + 1); });
+    document.getElementById('visor-cerrar').addEventListener('click', function () { visor.close(); });
+    visor.addEventListener('click', function (e) { if (e.target === visor) visor.close(); });
+    visor.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') mostrar(actual + 1);
+      if (e.key === 'ArrowLeft') mostrar(actual - 1);
+    });
+    visor.addEventListener('close', function () { if (origen) origen.focus(); });
+  }
 })();

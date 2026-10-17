@@ -16,7 +16,7 @@
   <meta property="og:title" content="Metabosques | Restauración ecológica y gestión forestal">
   <meta property="og:description" content="Compensaciones, restauración ecológica, aprovechamiento forestal y consultoría ambiental en Colombia.">
   <meta property="og:url" content="https://metabosques.com/">
-  <meta property="og:image" content="https://metabosques.com/assets/og-image.png">
+  <meta property="og:image" content="https://metabosques.com/assets/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
       <nav class="nav" id="nav" aria-label="Principal">
         <a href="#servicios">Servicios</a>
         <a href="#como-trabajamos">Cómo trabajamos</a>
-        <a href="#proyectos">Proyectos</a>
+        <a href="#en-campo">En campo</a>
         <a href="#nosotros">Nosotros</a>
         <a class="btn btn-cinta" href="#contacto">Cotizar un proyecto</a>
       </nav>
@@ -61,6 +61,7 @@
 
   <main id="contenido">
     <section class="portada" id="inicio">
+      <img class="portada-foto" src="assets/fotos/comunidad-aerea-g.webp" srcset="assets/fotos/comunidad-aerea-p.webp 640w, assets/fotos/comunidad-aerea-g.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Vista aérea de una jornada de campo con la comunidad" fetchpriority="high">
       <canvas id="curvas" aria-hidden="true"></canvas>
       <div class="wrap">
         <h1>Restauración ecológica y gestión forestal, de la licencia al último monitoreo.</h1>
@@ -69,7 +70,6 @@
           <a class="btn btn-cinta" href="#contacto">Cotizar un proyecto</a>
           <a class="btn btn-claro" href="https://wa.me/573007925238?text=Hola%20Metabosques%2C%20quisiera%20informaci%C3%B3n%20sobre%20un%20proyecto" target="_blank" rel="noopener">Escribir por WhatsApp</a>
         </div>
-        <p class="clientes"><strong>Trabajamos con</strong> <span>Empresas de energía e infraestructura</span> <span>Autoridades ambientales</span> <span>Entidades territoriales</span> <span>Comunidades rurales</span></p>
       </div>
     </section>
 
@@ -156,47 +156,87 @@
       </div>
     </section>
 
-    <section class="banda" id="proyectos" aria-labelledby="t-proyectos">
+    <section class="banda" id="en-campo" aria-labelledby="t-campo">
       <div class="wrap">
         <div class="encabezado-banda">
-          <h2 id="t-proyectos">Proyectos</h2>
-          <p>Experiencia en ecosistemas costeros, bosque seco, alta montaña y corredores de infraestructura.</p>
+          <h2 id="t-campo">En campo</h2>
+          <p>Vivero, siembra y monitoreo con nuestro equipo en costa, humedales y sabana.</p>
         </div>
-
-        <article class="caso">
-          <div class="visual">
-            <canvas id="curvas-caso" aria-hidden="true"></canvas>
-            <span class="lugar">Necoclí, Antioquia</span>
-          </div>
-          <div class="cuerpo">
-            <h3>Rehabilitación de la Ensenada de Rionegro</h3>
-            <p>Ejecutamos la totalidad del contrato de rehabilitación ecológica de la ensenada, en la costa del Golfo de Urabá.</p>
-            <dl>
-              <dt>Ecosistema</dt><dd>Costero</dd>
-              <dt>Alcance</dt><dd>Ejecución integral del contrato</dd>
-            </dl>
-          </div>
-        </article>
-
-        <ul class="lineas">
-          <li class="linea-exp">
-            <span class="eco">Bosque seco tropical</span>
-            <h3>Conectividad ribereña</h3>
-            <p>Restauración de corredores ribereños y monitoreo de la biodiversidad asociada.</p>
-          </li>
-          <li class="linea-exp">
-            <span class="eco">Infraestructura vial</span>
-            <h3>Revegetalización de taludes</h3>
-            <p>Estabilización biotécnica con especies nativas y control de erosión.</p>
-          </li>
-          <li class="linea-exp">
-            <span class="eco">Alta montaña</span>
-            <h3>Núcleos altoandinos</h3>
-            <p>Enriquecimiento y control de especies invasoras en áreas protegidas.</p>
-          </li>
-        </ul>
+        <div class="galeria">
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="0" aria-label="Ver foto ampliada: Siembra de plántulas en franja costera">
+              <img src="assets/fotos/siembra-costa-p.webp" data-grande="assets/fotos/siembra-costa-g.webp" width="1000" height="1333" alt="Siembra de plántulas en franja costera" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Siembra de plántulas en franja costera</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="1" aria-label="Ver foto ampliada: Vivero de especies nativas">
+              <img src="assets/fotos/vivero-p.webp" data-grande="assets/fotos/vivero-g.webp" width="1400" height="1050" alt="Vivero de especies nativas" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Vivero de especies nativas</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="2" aria-label="Ver foto ampliada: Instalación de cámaras trampa para monitoreo de fauna">
+              <img src="assets/fotos/camara-trampa-p.webp" data-grande="assets/fotos/camara-trampa-g.webp" width="1320" height="780" alt="Instalación de cámaras trampa para monitoreo de fauna" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Instalación de cámaras trampa para monitoreo de fauna</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="3" aria-label="Ver foto ampliada: Recorrido de establecimiento en humedal costero">
+              <img src="assets/fotos/humedal-p.webp" data-grande="assets/fotos/humedal-g.webp" width="1000" height="1333" alt="Recorrido de establecimiento en humedal costero" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Recorrido de establecimiento en humedal costero</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="4" aria-label="Ver foto ampliada: Visita técnica de seguimiento en sabana">
+              <img src="assets/fotos/visita-sabana-p.webp" data-grande="assets/fotos/visita-sabana-g.webp" width="1400" height="1050" alt="Visita técnica de seguimiento en sabana" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Visita técnica de seguimiento en sabana</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="5" aria-label="Ver foto ampliada: Germinación de semillas en vivero">
+              <img src="assets/fotos/germinacion-p.webp" data-grande="assets/fotos/germinacion-g.webp" width="1000" height="1333" alt="Germinación de semillas en vivero" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Germinación de semillas en vivero</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="6" aria-label="Ver foto ampliada: Transporte de material vegetal por mar">
+              <img src="assets/fotos/transporte-lancha-p.webp" data-grande="assets/fotos/transporte-lancha-g.webp" width="1000" height="1173" alt="Transporte de material vegetal por mar" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Transporte de material vegetal por mar</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="7" aria-label="Ver foto ampliada: Plantación con fertilización de establecimiento">
+              <img src="assets/fotos/plantacion-p.webp" data-grande="assets/fotos/plantacion-g.webp" width="1000" height="1200" alt="Plantación con fertilización de establecimiento" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Plantación con fertilización de establecimiento</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="8" aria-label="Ver foto ampliada: Revisión de material vegetal antes de la siembra">
+              <img src="assets/fotos/material-vegetal-p.webp" data-grande="assets/fotos/material-vegetal-g.webp" width="1000" height="1333" alt="Revisión de material vegetal antes de la siembra" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Revisión de material vegetal antes de la siembra</figcaption>
+          </figure>
+          <figure class="foto">
+            <button type="button" class="foto-abrir" data-i="9" aria-label="Ver foto ampliada: Seguimiento a una plántula recién sembrada">
+              <img src="assets/fotos/plantula-playa-p.webp" data-grande="assets/fotos/plantula-playa-g.webp" width="1000" height="1067" alt="Seguimiento a una plántula recién sembrada" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Seguimiento a una plántula recién sembrada</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
+
+    <dialog class="visor" id="visor" aria-label="Foto ampliada">
+      <img id="visor-img" src="" alt="">
+      <p id="visor-texto"></p>
+      <div class="visor-controles">
+        <button type="button" id="visor-ant" aria-label="Foto anterior">Anterior</button>
+        <span id="visor-pos" aria-live="polite"></span>
+        <button type="button" id="visor-sig" aria-label="Foto siguiente">Siguiente</button>
+        <button type="button" id="visor-cerrar" class="visor-cerrar">Cerrar</button>
+      </div>
+    </dialog>
 
     <section class="banda" id="nosotros" aria-labelledby="t-nosotros">
       <div class="wrap nosotros">
@@ -206,10 +246,8 @@
           <p>Nuestro equipo multidisciplinario estructura proyectos medibles y trazables en distintos ecosistemas del país.</p>
         </div>
         <div class="cifras">
-          <div class="cifra"><b>2.500 ha</b><span>restauradas</span></div>
-          <div class="cifra"><b>120.000+</b><span>árboles sembrados</span></div>
-          <div class="cifra"><b>50+</b><span>empresas aliadas</span></div>
-          <div class="cifra"><b>20+</b><span>proyectos con comunidades</span></div>
+          <div class="cifra"><b>250 ha</b><span>restauradas</span></div>
+          <div class="cifra"><b>120.000</b><span>árboles sembrados</span></div>
         </div>
       </div>
     </section>
