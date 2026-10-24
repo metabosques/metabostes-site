@@ -47,8 +47,8 @@ FAQ_PORTADA = [
      "En todo Colombia. Llevamos el equipo técnico y de campo a cualquier región del país: Caribe, Andina, Pacífico, Orinoquía y Amazonía. Hemos trabajado en franjas costeras, humedales y sabanas. Nuestra sede administrativa está en Medellín."),
     ("¿Qué cambió en las compensaciones por pérdida de biodiversidad en 2026?",
      "En 2026 se actualizó el manual nacional de compensación del medio biótico. Cambiaron los factores por tipo de ecosistema, se agregó un ajuste según dónde se compensa y el plan exige zonificación detallada, análisis de adicionalidad y participación comunitaria. Te ayudamos a calcular el área y a ajustar tu plan."),
-    ("¿Ayudan a cumplir la inversión forzosa del 1 %?",
-     "Sí. Revisamos la obligación y la liquidación, formulamos el plan de inversión, lo tramitamos ante la autoridad ambiental y lo ejecutamos en la cuenca."),
+    ("¿Hacen caracterizaciones de flora y fauna?",
+     "Sí. Hacemos inventarios de flora y fauna en campo para líneas base, estudios ambientales, permisos y compensaciones, con listados de especies, análisis de diversidad, cartografía e informe técnico."),
     ("¿Tramitan permisos de aprovechamiento forestal?",
      "Sí. Hacemos el inventario forestal, el plan de aprovechamiento y la compensación, radicamos la solicitud y acompañamos el trámite hasta la resolución. También ejecutamos la tala y tramitamos los salvoconductos."),
     ("¿Se encargan del mantenimiento y los informes después de la siembra?",
@@ -136,13 +136,13 @@ def negocio(completo=True):
         return d
     d.update({
         "alternateName": "Metabosques",
-        "description": "Empresa ambiental colombiana con cobertura en todo el país y sede administrativa en Medellín. Aprovechamiento forestal, compensación por pérdida de biodiversidad, inversión forzosa del 1 %, rescate de flora y fauna, restauración ecológica y seguimiento ambiental.",
+        "description": "Empresa ambiental colombiana con cobertura en todo el país y sede administrativa en Medellín. Aprovechamiento forestal, compensación por pérdida de biodiversidad, caracterización de flora y fauna, restauración ecológica y seguimiento ambiental.",
         "logo": f"{SITIO}/assets/logo.png",
         "areaServed": AREA,
         "priceRange": "Cotización por proyecto",
         "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00"},
         "contactPoint": {"@type": "ContactPoint", "contactType": "Ventas", "telephone": "+573007925238", "email": CORREO, "availableLanguage": "es", "areaServed": "CO"},
-        "knowsAbout": ["Aprovechamiento forestal", "Compensación por pérdida de biodiversidad", "Inversión forzosa del 1 %", "Rescate de flora y fauna", "Restauración ecológica", "Seguimiento ambiental", "Informes de cumplimiento ambiental (ICA)", "Consultoría ambiental"],
+        "knowsAbout": ["Aprovechamiento forestal", "Compensación por pérdida de biodiversidad", "Caracterización de flora y fauna", "Restauración ecológica", "Seguimiento ambiental", "Informes de cumplimiento ambiental (ICA)", "Consultoría ambiental"],
         "hasOfferCatalog": {
             "@type": "OfferCatalog", "name": "Servicios ambientales",
             "itemListElement": [{"@type": "Offer", "itemOffered": {"@id": f"{SITIO}{url_servicio(s)}#servicio"}} for s in SERVICIOS],
@@ -341,14 +341,14 @@ def pagina_blog():
     <div class="wrap">
       {migas_html(migas)}
       <h1>Guías prácticas de cumplimiento ambiental</h1>
-      <p class="lead">Explicamos paso a paso las obligaciones ambientales que más dudas generan en Colombia: compensaciones, inversión del 1 % y permisos forestales.</p>
+      <p class="lead">Explicamos paso a paso las obligaciones ambientales que más dudas generan en Colombia: compensaciones por pérdida de biodiversidad y permisos forestales.</p>
       <ul class="entradas">{tarjetas}
       </ul>
 {caja_cta('Hola Metabosques, leí sus guías y quiero apoyo con un proyecto.', titulo='¿Prefieres que lo revisemos contigo?')}
     </div>
   </main>
 """
-    return cabeza("Blog: guías prácticas de cumplimiento ambiental", "Guías paso a paso sobre compensación por pérdida de biodiversidad (Res. 305 de 2026), inversión forzosa del 1 % y permisos de aprovechamiento forestal en Colombia.", ruta, ld([negocio(False), blog, migas_ld(migas)])) + cuerpo + cola()
+    return cabeza("Blog: guías prácticas de cumplimiento ambiental", "Guías paso a paso sobre compensación por pérdida de biodiversidad (Res. 305 de 2026) y permisos de aprovechamiento forestal en Colombia.", ruta, ld([negocio(False), blog, migas_ld(migas)])) + cuerpo + cola()
 
 
 def pagina_redireccion(destino):
@@ -438,7 +438,7 @@ def main():
         f.write("</urlset>\n")
 
     lineas = ["# Metabosques S.A.S.", "",
-              "> Empresa ambiental colombiana que presta servicios en todo el país (sede administrativa en Medellín). Aprovechamiento forestal para parques solares, vías, líneas de transmisión y obras; compensación por pérdida de biodiversidad (Resolución 305 de 2026); inversión forzosa del 1 %; rescate de flora y fauna; restauración ecológica; y seguimiento ambiental con informes de cumplimiento (ICA).",
+              "> Empresa ambiental colombiana que presta servicios en todo el país (sede administrativa en Medellín). Aprovechamiento forestal para parques solares, vías, líneas de transmisión y obras; compensación por pérdida de biodiversidad (Resolución 305 de 2026); caracterización de flora y fauna; restauración ecológica; y seguimiento ambiental con informes de cumplimiento (ICA).",
               "", f"Contacto: {TEL} (WhatsApp) · {CORREO} · {SITIO}/#contacto",
               "Cifras: 250 hectáreas restauradas y 120.000 árboles sembrados.", "", "## Servicios principales", ""]
     lineas += [f"- [{s['nombre']}]({SITIO}{url_servicio(s)}): {s['descripcion']}" for s in PRINCIPALES]

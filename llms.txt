@@ -1,6 +1,6 @@
 # Metabosques S.A.S.
 
-> Empresa ambiental colombiana que presta servicios en todo el país (sede administrativa en Medellín). Aprovechamiento forestal para parques solares, vías, líneas de transmisión y obras; compensación por pérdida de biodiversidad (Resolución 305 de 2026); inversión forzosa del 1 %; rescate de flora y fauna; restauración ecológica; y seguimiento ambiental con informes de cumplimiento (ICA).
+> Empresa ambiental colombiana que presta servicios en todo el país (sede administrativa en Medellín). Aprovechamiento forestal para parques solares, vías, líneas de transmisión y obras; compensación por pérdida de biodiversidad (Resolución 305 de 2026); caracterización de flora y fauna; restauración ecológica; y seguimiento ambiental con informes de cumplimiento (ICA).
 
 Contacto: +57 300 792 5238 (WhatsApp) · amoreno@metabosques.com · https://metabosques.com/#contacto
 Cifras: 250 hectáreas restauradas y 120.000 árboles sembrados.
@@ -9,9 +9,8 @@ Cifras: 250 hectáreas restauradas y 120.000 árboles sembrados.
 
 - [Aprovechamiento forestal](https://metabosques.com/aprovechamiento-forestal): Inventario forestal, permiso de aprovechamiento forestal único ante la CAR o dentro de la licencia, tala controlada, salvoconductos y compensación para proyectos en toda Colombia.
 - [Compensación por pérdida de biodiversidad](https://metabosques.com/compensacion-perdida-biodiversidad): Calculamos, formulamos y ejecutamos planes de compensación del medio biótico según el nuevo manual de la Resolución 305 de 2026: área, zonificación, acuerdos con propietarios, restauración e ICA.
-- [Inversión forzosa del 1 %](https://metabosques.com/inversion-forzosa-1-por-ciento): Te ayudamos a cumplir la inversión forzosa de no menos del 1 % por uso de agua de fuentes naturales: liquidación, plan de inversión ante la ANLA o la CAR, ejecución en la cuenca y actualización anual.
-- [Rescate de flora y fauna](https://metabosques.com/rescate-flora-fauna): Ahuyentamiento, rescate y reubicación de fauna silvestre, y rescate de epífitas y flora en veda antes y durante la remoción de vegetación, con biólogos en campo e informes para la autoridad.
-- [Restauración ecológica](https://metabosques.com/restauracion-ecologica): Restauración activa, pasiva y enriquecimiento con especies nativas para compensaciones, inversión del 1 % y metas voluntarias: diagnóstico, diseño, vivero, siembra, mantenimiento y monitoreo.
+- [Caracterización de flora y fauna](https://metabosques.com/caracterizacion-flora-fauna): Inventarios y caracterización de flora y fauna para líneas base, estudios de impacto, permisos y compensaciones: parcelas, fototrampeo, especies amenazadas y en veda, con informes y cartografía.
+- [Restauración ecológica](https://metabosques.com/restauracion-ecologica): Restauración activa, pasiva y enriquecimiento con especies nativas para compensaciones, aprovechamientos forestales y metas voluntarias: diagnóstico, diseño, vivero, siembra, mantenimiento y monitoreo.
 - [Seguimiento ambiental](https://metabosques.com/seguimiento-ambiental): Seguimiento a licencias, permisos y planes de manejo: matriz de obligaciones, ICA, monitoreos de fauna y flora, cartografía para la autoridad y respuesta a requerimientos.
 
 ## Servicios complementarios
@@ -23,14 +22,13 @@ Cifras: 250 hectáreas restauradas y 120.000 árboles sembrados.
 ## Guías prácticas
 
 - [¿Cómo calcular una compensación con la Resolución 305 de 2026?](https://metabosques.com/blog/como-calcular-compensacion-resolucion-305): Guía paso a paso para calcular el área a compensar con el nuevo manual de compensación del medio biótico (Resolución 305 de 2026): factores, ajuste por ubicación, ejemplo y transición.
-- [¿Qué es la inversión forzosa del 1 % y cómo se cumple?](https://metabosques.com/blog/inversion-forzosa-1-por-ciento-como-se-cumple): Guía práctica sobre la inversión forzosa de no menos del 1 % en Colombia: quién está obligado, cómo se liquida, en qué se puede invertir, plazos del plan de inversión y actualización anual.
 - [Permisos de aprovechamiento forestal ante la CAR, paso a paso](https://metabosques.com/blog/permiso-aprovechamiento-forestal-car-paso-a-paso): Cómo tramitar un permiso de aprovechamiento forestal único ante la corporación autónoma regional: qué revisar antes, inventario, plan de aprovechamiento, documentos, evaluación, salvoconductos y compensación.
 
 ## Preguntas frecuentes
 
 - **¿En qué regiones de Colombia trabajan?** En todo Colombia. Llevamos el equipo técnico y de campo a cualquier región del país: Caribe, Andina, Pacífico, Orinoquía y Amazonía. Hemos trabajado en franjas costeras, humedales y sabanas. Nuestra sede administrativa está en Medellín.
 - **¿Qué cambió en las compensaciones por pérdida de biodiversidad en 2026?** En 2026 se actualizó el manual nacional de compensación del medio biótico. Cambiaron los factores por tipo de ecosistema, se agregó un ajuste según dónde se compensa y el plan exige zonificación detallada, análisis de adicionalidad y participación comunitaria. Te ayudamos a calcular el área y a ajustar tu plan.
-- **¿Ayudan a cumplir la inversión forzosa del 1 %?** Sí. Revisamos la obligación y la liquidación, formulamos el plan de inversión, lo tramitamos ante la autoridad ambiental y lo ejecutamos en la cuenca.
+- **¿Hacen caracterizaciones de flora y fauna?** Sí. Hacemos inventarios de flora y fauna en campo para líneas base, estudios ambientales, permisos y compensaciones, con listados de especies, análisis de diversidad, cartografía e informe técnico.
 - **¿Tramitan permisos de aprovechamiento forestal?** Sí. Hacemos el inventario forestal, el plan de aprovechamiento y la compensación, radicamos la solicitud y acompañamos el trámite hasta la resolución. También ejecutamos la tala y tramitamos los salvoconductos.
 - **¿Se encargan del mantenimiento y los informes después de la siembra?** Sí. Hacemos el mantenimiento de las áreas establecidas, medimos los indicadores y entregamos los informes de cumplimiento ambiental (ICA) que pide la autoridad.
 - **¿Qué información necesitan para cotizar un proyecto?** La ubicación del predio, el área aproximada, la autoridad ambiental que lleva el caso y los plazos. Si tienes el acto administrativo con la obligación, compártelo.

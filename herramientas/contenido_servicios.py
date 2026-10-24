@@ -52,7 +52,7 @@ SERVICIOS = [
             ("¿Cuánto tarda un permiso de aprovechamiento forestal único?",
              "Depende de la corporación y de que la solicitud llegue completa. Lo que más acorta el trámite es radicar desde el inicio el inventario, el plan de aprovechamiento, los documentos del predio y el plan de compensación. En la cotización te damos un cronograma para tu caso."),
             ("¿Qué pasa si en el área hay especies en veda?",
-             "Desde el Decreto-Ley 2106 de 2019 ya no se hace un trámite separado de levantamiento de veda: la autoridad impone las medidas de manejo dentro del mismo permiso o licencia. Incluimos esas especies en el inventario y en el plan de rescate."),
+             "Desde el Decreto-Ley 2106 de 2019 ya no se hace un trámite separado de levantamiento de veda: la autoridad impone las medidas de manejo dentro del mismo permiso o licencia. Incluimos esas especies en el inventario y en el plan de manejo."),
             ("¿Qué compensación me van a exigir?",
              "Para el aprovechamiento forestal único aplica el manual de compensación del medio biótico adoptado por la Resolución 305 de 2026. Para árboles aislados, la autoridad define una reposición de individuos."),
         ],
@@ -110,107 +110,67 @@ SERVICIOS = [
         "wa": "Hola Metabosques, necesito apoyo con una compensación por pérdida de biodiversidad (Res. 305 de 2026).",
     },
     {
-        "slug": "inversion-forzosa-1-por-ciento",
-        "nombre": "Inversión forzosa del 1 %",
-        "h1": "Inversión forzosa del 1 %: liquidación, plan de inversión y ejecución",
-        "title": "Inversión forzosa del 1 %: liquidación, plan y ejecución en la cuenca",
-        "descripcion": "Te ayudamos a cumplir la inversión forzosa de no menos del 1 % por uso de agua de fuentes naturales: liquidación, plan de inversión ante la ANLA o la CAR, ejecución en la cuenca y actualización anual.",
-        "resumen": "Liquidación, plan de inversión y ejecución en la cuenca para proyectos licenciados que captan agua de fuentes naturales.",
-        "tipo": "Inversión forzosa de no menos del 1 %",
+        "slug": "caracterizacion-flora-fauna",
+        "nombre": "Caracterización de flora y fauna",
+        "h1": "Caracterización de flora y fauna para estudios ambientales y proyectos",
+        "title": "Caracterización de flora y fauna en Colombia: inventarios y línea base",
+        "descripcion": "Inventarios y caracterización de flora y fauna para líneas base, estudios de impacto, permisos y compensaciones: parcelas, fototrampeo, especies amenazadas y en veda, con informes y cartografía.",
+        "resumen": "Inventarios de flora y fauna, línea base biótica, especies amenazadas y en veda, con informes y cartografía.",
+        "tipo": "Caracterización de flora y fauna",
         "principal": True,
-        "lead": "Si tu proyecto tiene licencia ambiental y capta agua directamente de un río, una quebrada o un acuífero, la ley te obliga a invertir al menos el 1 % del valor del proyecto en recuperar, preservar y conservar la cuenca de donde la tomas. Formulamos el plan de inversión, lo tramitamos y lo ejecutamos en campo.",
+        "lead": "Antes de diseñar un proyecto, pedir un permiso o planear una compensación hay que saber qué especies hay en el área y en qué estado está el ecosistema. Hacemos la caracterización de flora y fauna en campo, con biólogos y forestales, y la entregamos lista para el estudio o el trámite.",
         "cuerpo": """
-      <h2>¿Quién está obligado?</h2>
-      <p>Según el parágrafo del artículo 43 de la Ley 99 de 1993 y el Decreto 1076 de 2015, deben hacer la inversión los proyectos que cumplen todas estas condiciones:</p>
+      <h2>Para qué sirve</h2>
       <ul class="lista">
-        <li>Requieren licencia ambiental.</li>
-        <li>Captan agua directamente de una fuente natural, superficial o subterránea.</li>
-        <li>Usan esa agua en cualquiera de sus etapas, para cualquier actividad.</li>
-      </ul>
-      <p>Si el agua llega de un acueducto o de otro prestador del servicio, no hay obligación.</p>
-
-      <h2>En qué se puede invertir</h2>
-      <ul class="lista">
-        <li>Restauración ecológica, rehabilitación y recuperación de la cuenca, incluidos proyectos de uso sostenible (forestales, agroforestales y silvopastoriles).</li>
-        <li>Compra de predios o mejoras en áreas de importancia estratégica para la conservación.</li>
-        <li>Monitoreo del recurso hídrico con estaciones hidrometeorológicas.</li>
-        <li>Interceptores y tratamiento de aguas residuales domésticas en municipios de categorías 4, 5 y 6.</li>
-        <li>Mecanismos como pago por servicios ambientales, acuerdos de conservación y bancos de hábitat.</li>
-      </ul>
-      <p>La inversión se hace primero en la subzona hidrográfica del proyecto y, con justificación técnica, en la zona hidrográfica. Los proyectos lineales pueden distribuirla entre las subzonas que atraviesan.</p>
-
-      <h2>Qué incluye</h2>
-      <ul class="lista">
-        <li>Revisión de la obligación en la licencia y de la liquidación certificada.</li>
-        <li>Identificación de predios y acciones en la cuenca, concertada con la autoridad, los municipios y las comunidades.</li>
-        <li>Plan de inversión con actividades, metas, presupuesto y cronograma.</li>
-        <li>Ejecución en campo: restauración, aislamientos, acuerdos de conservación y monitoreo.</li>
-        <li>Actualización anual del saldo no ejecutado e informes de avance.</li>
-      </ul>""",
-        "faq": [
-            ("¿Si tomo el agua de un acueducto debo hacer la inversión del 1 %?",
-             "No. La obligación aplica cuando el proyecto licenciado capta el agua directamente de una fuente natural. Si la recibe de un acueducto u otro prestador, no está obligado."),
-            ("¿Cuándo se presenta el plan de inversión?",
-             "Las líneas generales se proponen con el estudio de impacto ambiental y quedan en la licencia. El plan con las acciones específicas se presenta dentro de los seis meses siguientes al fin de la construcción y el montaje; también se pueden presentar planes parciales durante la construcción."),
-            ("¿Qué pasa con el dinero que no se ha ejecutado?",
-             "El saldo se actualiza cada año con el IPC, con corte al 31 de diciembre, y la actualización se reporta a la autoridad a más tardar el 31 de marzo del año siguiente."),
-            ("¿Se puede cambiar un plan de inversión ya aprobado?",
-             "Sí. El Decreto 1076 de 2015 permite modificar el plan de inversión en cualquier momento, sin modificar la licencia, presentando la solicitud a la autoridad."),
-        ],
-        "guia": "inversion-forzosa-1-por-ciento-como-se-cumple",
-        "wa": "Hola Metabosques, necesito apoyo con la inversión forzosa del 1 % de mi proyecto.",
-    },
-    {
-        "slug": "rescate-flora-fauna",
-        "nombre": "Rescate de flora y fauna",
-        "h1": "Rescate y reubicación de flora y fauna en obras y proyectos",
-        "title": "Rescate y reubicación de flora y fauna silvestre en obras",
-        "descripcion": "Ahuyentamiento, rescate y reubicación de fauna silvestre, y rescate de epífitas y flora en veda antes y durante la remoción de vegetación, con biólogos en campo e informes para la autoridad.",
-        "resumen": "Ahuyentamiento y reubicación de fauna, y rescate de epífitas y especies en veda antes de que entre la maquinaria.",
-        "tipo": "Rescate y reubicación de flora y fauna silvestre",
-        "principal": True,
-        "lead": "Antes de que entre la maquinaria, hay que retirar del frente de obra a los animales y a las plantas que la licencia o el permiso ordenan proteger. Hacemos ese trabajo con biólogos y forestales en campo, y lo documentamos para el informe de cumplimiento.",
-        "cuerpo": """
-      <h2>Fauna silvestre</h2>
-      <ul class="lista">
-        <li>Recorridos previos para identificar refugios, nidos y madrigueras.</li>
-        <li>Ahuyentamiento antes y durante la tala y el descapote.</li>
-        <li>Captura y manipulación por profesionales, solo cuando el ahuyentamiento no basta.</li>
-        <li>Reubicación en áreas receptoras con hábitat similar, fuera del alcance de la obra.</li>
-        <li>Remisión de individuos heridos al centro de atención de fauna de la autoridad ambiental.</li>
+        <li>Línea base biótica de estudios de impacto ambiental y planes de manejo.</li>
+        <li>Inventarios para permisos de aprovechamiento forestal.</li>
+        <li>Diagnóstico de áreas para compensación y restauración ecológica.</li>
+        <li>Monitoreos periódicos exigidos en licencias y permisos.</li>
       </ul>
 
       <h2>Flora</h2>
       <ul class="lista">
-        <li>Identificación y marcación de epífitas, como orquídeas, bromelias, musgos y líquenes, y de especies en veda o amenazadas.</li>
-        <li>Rescate de epífitas, plántulas, brinzales y semillas.</li>
-        <li>Traslado a árboles hospederos o a vivero temporal, y seguimiento de su supervivencia.</li>
+        <li>Parcelas e inventarios de vegetación por cobertura: fustales, latizales y brinzales.</li>
+        <li>Identificación botánica y colecta de muestras cuando se requiere.</li>
+        <li>Inventario de epífitas, como orquídeas, bromelias, musgos y líquenes.</li>
+        <li>Análisis de estructura, composición y diversidad.</li>
+      </ul>
+
+      <h2>Fauna</h2>
+      <ul class="lista">
+        <li>Muestreos de aves, mamíferos, anfibios y reptiles con métodos estandarizados.</li>
+        <li>Fototrampeo con cámaras trampa.</li>
+        <li>Registro de especies amenazadas, endémicas y migratorias.</li>
       </ul>
 
       <h2>Qué entregamos</h2>
-      <p>El plan de rescate, los registros fotográficos georreferenciados, la base de datos de individuos rescatados y reubicados, y los informes para el ICA.</p>
-
-      <h2>Marco normativo</h2>
-      <p>Las medidas de rescate las impone la autoridad en la licencia o el permiso, dentro del plan de manejo ambiental. Para la flora en veda, como la veda nacional de musgos, líquenes, orquídeas y bromelias de la Resolución 0213 de 1977, el Decreto-Ley 2106 de 2019 eliminó el trámite separado de levantamiento de veda: las medidas de conservación se fijan dentro del mismo trámite.</p>""",
+      <ul class="lista">
+        <li>Listados de especies con su estado de amenaza, veda o endemismo.</li>
+        <li>Índices de diversidad y análisis por cobertura.</li>
+        <li>Cartografía de coberturas y puntos de muestreo.</li>
+        <li>Base de datos y registros fotográficos georreferenciados.</li>
+        <li>Informe técnico listo para el estudio, el permiso o el ICA.</li>
+      </ul>
+      <p>Cuando hay colecta de especímenes para estudios ambientales, la hacemos con el permiso de estudio que exige el Decreto 1076 de 2015. Si el proyecto lo requiere, también acompañamos el ahuyentamiento y el rescate de fauna y flora antes de la remoción de vegetación.</p>""",
         "faq": [
-            ("¿Cuándo se hace el rescate de fauna y flora?",
-             "Antes de remover la cobertura vegetal y acompañando el frente de tala y descapote, para que ningún individuo quede en el área cuando entra la maquinaria."),
-            ("¿A dónde se llevan los animales rescatados?",
-             "A áreas receptoras definidas en el plan, con hábitat similar y fuera del alcance de la obra. Los individuos heridos se remiten al centro de atención de fauna de la autoridad ambiental."),
-            ("¿Necesito un trámite aparte para intervenir epífitas en veda?",
-             "No. Desde el Decreto-Ley 2106 de 2019 la autoridad fija las medidas de manejo dentro de la misma licencia, permiso o autorización. Nosotros las ejecutamos y las documentamos."),
-            ("¿Qué recibe la empresa al final?",
-             "Un informe con la base de datos de individuos rescatados y reubicados, registros fotográficos georreferenciados y los indicadores para el informe de cumplimiento ambiental."),
+            ("¿Qué es una caracterización de flora y fauna?",
+             "Es el inventario de las especies de plantas y animales de un área y el análisis del estado de su ecosistema. Es la base de los estudios ambientales, los permisos y los planes de compensación."),
+            ("¿Cuánto tiempo toma la caracterización en campo?",
+             "Depende del área, de las coberturas y de los grupos que haya que muestrear. En la cotización te damos un cronograma según los términos de referencia que apliquen a tu proyecto."),
+            ("¿Identifican especies amenazadas o en veda?",
+             "Sí. Cada especie registrada se cruza con las listas oficiales de especies amenazadas y de veda, porque eso define las medidas de manejo que pedirá la autoridad."),
+            ("¿Hacen monitoreos periódicos además de la línea base?",
+             "Sí. Repetimos los muestreos con la misma metodología para que los resultados sean comparables y sirvan para los informes de cumplimiento."),
         ],
         "guia": None,
-        "wa": "Hola Metabosques, necesito rescate y reubicación de flora y fauna para una obra.",
+        "wa": "Hola Metabosques, necesito una caracterización de flora y fauna para un proyecto.",
     },
     {
         "slug": "restauracion-ecologica",
         "nombre": "Restauración ecológica",
         "h1": "Restauración ecológica con especies nativas en toda Colombia",
         "title": "Restauración ecológica con especies nativas en Colombia",
-        "descripcion": "Restauración activa, pasiva y enriquecimiento con especies nativas para compensaciones, inversión del 1 % y metas voluntarias: diagnóstico, diseño, vivero, siembra, mantenimiento y monitoreo.",
+        "descripcion": "Restauración activa, pasiva y enriquecimiento con especies nativas para compensaciones, aprovechamientos forestales y metas voluntarias: diagnóstico, diseño, vivero, siembra, mantenimiento y monitoreo.",
         "resumen": "Diagnóstico, diseño, vivero, siembra con especies nativas, mantenimiento y monitoreo con indicadores.",
         "tipo": "Restauración ecológica",
         "principal": True,
@@ -228,7 +188,6 @@ SERVICIOS = [
       <ul class="lista">
         <li>Planes de compensación por pérdida de biodiversidad.</li>
         <li>Compensaciones de aprovechamientos forestales.</li>
-        <li>Inversión forzosa del 1 % en la cuenca.</li>
         <li>Metas voluntarias de carbono y biodiversidad.</li>
       </ul>
 
@@ -249,8 +208,8 @@ SERVICIOS = [
              "Sí. Elegimos las especies del ecosistema de referencia del lugar y priorizamos material de procedencia local."),
             ("¿Cómo se demuestra que la restauración funciona?",
              "Con indicadores medidos en campo: supervivencia, crecimiento, cobertura, regeneración natural y diversidad. Los reportamos en los informes de cumplimiento."),
-            ("¿Puedo usar la restauración para cumplir una compensación o la inversión del 1 %?",
-             "Sí. La restauración es una de las acciones principales tanto en los planes de compensación como en la inversión forzosa del 1 %."),
+            ("¿Puedo usar la restauración para cumplir una compensación?",
+             "Sí. La restauración es una de las acciones principales de los planes de compensación por pérdida de biodiversidad y de las compensaciones forestales."),
         ],
         "guia": "como-calcular-compensacion-resolucion-305",
         "wa": "Hola Metabosques, quiero cotizar un proyecto de restauración ecológica.",
@@ -268,12 +227,12 @@ SERVICIOS = [
         "cuerpo": """
       <h2>Qué incluye</h2>
       <ul class="lista">
-        <li>Matriz de obligaciones de la licencia, los permisos, la compensación y la inversión del 1 %, con responsables y fechas.</li>
+        <li>Matriz de obligaciones de la licencia, los permisos y las compensaciones, con responsables y fechas.</li>
         <li>Calendario de reportes y alertas de vencimientos.</li>
         <li>Monitoreos de fauna y flora, incluido fototrampeo, y apoyo en monitoreos de agua.</li>
         <li>Informes de cumplimiento ambiental (ICA) en los formatos de la autoridad, con su soporte cartográfico.</li>
         <li>Atención de visitas de seguimiento y respuesta a requerimientos.</li>
-        <li>Seguimiento al avance de compensaciones e inversión del 1 %.</li>
+        <li>Seguimiento al avance de las compensaciones.</li>
       </ul>
 
       <h2>Por qué importa</h2>
@@ -377,6 +336,7 @@ SERVICIOS = [
 
 # Redirecciones de las URL publicadas antes (servicios/<viejo>/ -> /<nuevo>)
 REDIRECCIONES = {
+    "rescate-flora-fauna": "caracterizacion-flora-fauna",
     "servicios/restauracion-ecologica-compensaciones": "restauracion-ecologica",
     "servicios/aprovechamiento-forestal": "aprovechamiento-forestal",
     "servicios/consultoria-ambiental": "consultoria-ambiental",
