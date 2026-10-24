@@ -45,11 +45,11 @@ AREA = [{"@type": "Country", "name": "Colombia"}] + [
 FAQ_PORTADA = [
     ("¿En qué regiones de Colombia trabajan?",
      "En todo Colombia. Llevamos el equipo técnico y de campo a cualquier región del país: Caribe, Andina, Pacífico, Orinoquía y Amazonía. Hemos trabajado en franjas costeras, humedales y sabanas. Nuestra sede administrativa está en Medellín."),
-    ("¿Qué cambió en las compensaciones con la Resolución 305 de 2026?",
-     "El Ministerio de Ambiente adoptó un nuevo manual de compensación del medio biótico que derogó la Resolución 256 de 2018. Cambiaron los factores por tipo de ecosistema, se agregó un ajuste según dónde se compensa y el plan exige zonificación detallada, análisis de adicionalidad y participación comunitaria."),
+    ("¿Qué cambió en las compensaciones por pérdida de biodiversidad en 2026?",
+     "En 2026 se actualizó el manual nacional de compensación del medio biótico. Cambiaron los factores por tipo de ecosistema, se agregó un ajuste según dónde se compensa y el plan exige zonificación detallada, análisis de adicionalidad y participación comunitaria. Te ayudamos a calcular el área y a ajustar tu plan."),
     ("¿Ayudan a cumplir la inversión forzosa del 1 %?",
-     "Sí. Revisamos la obligación y la liquidación, formulamos el plan de inversión, lo tramitamos ante la ANLA o la corporación y lo ejecutamos en la cuenca."),
-    ("¿Tramitan permisos de aprovechamiento forestal ante la CAR?",
+     "Sí. Revisamos la obligación y la liquidación, formulamos el plan de inversión, lo tramitamos ante la autoridad ambiental y lo ejecutamos en la cuenca."),
+    ("¿Tramitan permisos de aprovechamiento forestal?",
      "Sí. Hacemos el inventario forestal, el plan de aprovechamiento y la compensación, radicamos la solicitud y acompañamos el trámite hasta la resolución. También ejecutamos la tala y tramitamos los salvoconductos."),
     ("¿Se encargan del mantenimiento y los informes después de la siembra?",
      "Sí. Hacemos el mantenimiento de las áreas establecidas, medimos los indicadores y entregamos los informes de cumplimiento ambiental (ICA) que pide la autoridad."),
@@ -96,7 +96,7 @@ def redes_html():
 def pie_html():
     principales = "".join(f'<a href="{url_servicio(s)}">{e(s["nombre"])}</a>' for s in PRINCIPALES)
     otros = "".join(f'<a href="{url_servicio(s)}">{e(s["nombre"])}</a>' for s in COMPLEMENTARIOS)
-    guias = "".join(f'<a href="{url_guia(g)}">{e(g["titulo"])}</a>' for g in GUIAS)
+    guias = "".join(f'<a href="{url_guia(g)}">{e(g["corto"])}</a>' for g in GUIAS)
     return f"""<!-- pie:inicio -->
   <footer class="pie">
     <div class="pie-bloque">
@@ -142,7 +142,7 @@ def negocio(completo=True):
         "priceRange": "Cotización por proyecto",
         "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00"},
         "contactPoint": {"@type": "ContactPoint", "contactType": "Ventas", "telephone": "+573007925238", "email": CORREO, "availableLanguage": "es", "areaServed": "CO"},
-        "knowsAbout": ["Aprovechamiento forestal", "Compensación por pérdida de biodiversidad", "Resolución 305 de 2026", "Inversión forzosa del 1 %", "Rescate de flora y fauna", "Restauración ecológica", "Seguimiento ambiental", "Informes de cumplimiento ambiental (ICA)", "Consultoría ambiental"],
+        "knowsAbout": ["Aprovechamiento forestal", "Compensación por pérdida de biodiversidad", "Inversión forzosa del 1 %", "Rescate de flora y fauna", "Restauración ecológica", "Seguimiento ambiental", "Informes de cumplimiento ambiental (ICA)", "Consultoría ambiental"],
         "hasOfferCatalog": {
             "@type": "OfferCatalog", "name": "Servicios ambientales",
             "itemListElement": [{"@type": "Offer", "itemOffered": {"@id": f"{SITIO}{url_servicio(s)}#servicio"}} for s in SERVICIOS],
@@ -153,10 +153,10 @@ def negocio(completo=True):
     return d
 
 
-def servicio_ld(s):
+def servicio_ld(s, portada=False):
     return {
         "@type": "Service", "@id": f"{SITIO}{url_servicio(s)}#servicio", "name": s["nombre"], "serviceType": s["tipo"],
-        "description": s["descripcion"], "url": f"{SITIO}{url_servicio(s)}", "provider": {"@id": f"{SITIO}/#negocio"}, "areaServed": AREA,
+        "description": s["resumen"] if portada else s["descripcion"], "url": f"{SITIO}{url_servicio(s)}", "provider": {"@id": f"{SITIO}/#negocio"}, "areaServed": AREA,
     }
 
 
@@ -418,7 +418,7 @@ def main():
     sitio = {"@type": "WebSite", "@id": f"{SITIO}/#sitio", "url": f"{SITIO}/", "name": "Metabosques", "inLanguage": "es-CO", "publisher": {"@id": f"{SITIO}/#negocio"}}
     ruta = os.path.join(RAIZ, "index.html")
     t = open(ruta, encoding="utf-8").read()
-    t = reemplazar(t, "schema", ld([negocio(), sitio] + [servicio_ld(s) for s in SERVICIOS] + [faq_ld(FAQ_PORTADA, f"{SITIO}/#preguntas")]))
+    t = reemplazar(t, "schema", ld([negocio(), sitio] + [servicio_ld(s, portada=True) for s in SERVICIOS] + [faq_ld(FAQ_PORTADA, f"{SITIO}/#preguntas")]))
     t = reemplazar(t, "servicios", servicios_portada())
     t = reemplazar(t, "opciones", opciones_formulario())
     t = reemplazar(t, "faq", "<!-- faq:inicio -->" + faq_html(FAQ_PORTADA) + "<!-- faq:fin -->")

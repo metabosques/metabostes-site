@@ -5,6 +5,7 @@ AVISO = "Esta guía es informativa y no reemplaza la lectura de la norma ni la a
 GUIAS = [
     {
         "slug": "como-calcular-compensacion-resolucion-305",
+        "corto": "Cómo calcular una compensación",
         "titulo": "¿Cómo calcular una compensación con la Resolución 305 de 2026?",
         "title": "Cómo calcular una compensación por pérdida de biodiversidad con la Res. 305 de 2026",
         "descripcion": "Guía paso a paso para calcular el área a compensar con el nuevo manual de compensación del medio biótico (Resolución 305 de 2026): factores, ajuste por ubicación, ejemplo y transición.",
@@ -117,6 +118,7 @@ GUIAS = [
     },
     {
         "slug": "inversion-forzosa-1-por-ciento-como-se-cumple",
+        "corto": "Inversión forzosa del 1 %: cómo se cumple",
         "titulo": "¿Qué es la inversión forzosa del 1 % y cómo se cumple?",
         "title": "Inversión forzosa del 1 %: qué es, quién debe hacerla y cómo se cumple",
         "descripcion": "Guía práctica sobre la inversión forzosa de no menos del 1 % en Colombia: quién está obligado, cómo se liquida, en qué se puede invertir, plazos del plan de inversión y actualización anual.",
@@ -183,6 +185,7 @@ GUIAS = [
     },
     {
         "slug": "permiso-aprovechamiento-forestal-car-paso-a-paso",
+        "corto": "Permiso de aprovechamiento forestal, paso a paso",
         "titulo": "Permisos de aprovechamiento forestal ante la CAR, paso a paso",
         "title": "Permiso de aprovechamiento forestal ante la CAR: guía paso a paso",
         "descripcion": "Cómo tramitar un permiso de aprovechamiento forestal único ante la corporación autónoma regional: qué revisar antes, inventario, plan de aprovechamiento, documentos, evaluación, salvoconductos y compensación.",
