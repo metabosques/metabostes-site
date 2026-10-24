@@ -114,6 +114,21 @@ h3{font-size:var(--t-m);font-weight:650;font-variation-settings:"wdth" 106;lette
 .servicios p{margin-top:8px;color:var(--tenue)}
 .servicios .entrega{font-size:var(--t-xs);color:var(--texto);opacity:.82}
 
+.servicios h3 a{text-decoration:none}
+.servicios h3 a:hover{text-decoration:underline}
+.servicios .mas{display:inline-block;margin-top:10px;font-size:var(--t-xs);font-weight:600;color:var(--texto)}
+.servicios .mas::after{content:" →"}
+
+/* Preguntas frecuentes */
+.faq{margin-top:36px;border-top:1px solid var(--linea)}
+.faq details{border-bottom:1px solid var(--linea)}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.6rem;line-height:1;font-weight:300;color:var(--tinte);transition:transform .25s,color 1.1s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary h3{font-size:1.1rem}
+.faq details p{padding:0 0 22px;color:var(--tenue);max-width:34em}
+
 /* Proceso */
 .proceso{list-style:none;margin:44px 0 0;padding:0;counter-reset:paso;display:grid;gap:0}
 .proceso li{counter-increment:paso;display:grid;grid-template-columns:72px 1fr;column-gap:8px;padding:22px 0;border-top:1px solid var(--linea)}
@@ -169,11 +184,21 @@ h3{font-size:var(--t-m);font-weight:650;font-variation-settings:"wdth" 106;lette
 .oculto{position:absolute!important;left:-9999px}
 
 /* Pie */
-.pie{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;padding:28px var(--borde-r) calc(92px + env(safe-area-inset-bottom,0px)) max(6vw, var(--borde-l));
-  border-top:1px solid var(--linea);color:var(--tenue);font-size:var(--t-xs)}
-.pie .wrap{display:contents}
-.pie nav{display:flex;flex-wrap:wrap;gap:20px}
+.pie{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:32px 40px;
+  padding:48px var(--borde-r) calc(96px + env(safe-area-inset-bottom,0px)) max(6vw, var(--borde-l));
+  border-top:1px solid var(--linea);color:var(--tenue);font-size:var(--t-xs);background:var(--fondo);transition:background-color 1.1s ease}
 .pie a{color:var(--tenue)}
+.pie a:hover{color:var(--texto)}
+.pie-bloque{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.pie-marca{color:var(--texto);font-weight:700;font-size:1rem;font-variation-settings:"wdth" 116}
+.pie-titulo{color:var(--texto);font-weight:650;margin-bottom:2px}
+.pie-legal{grid-column:1/-1;border-top:1px solid var(--linea);padding-top:20px}
+.redes{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.redes a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px 0 12px;border:1px solid var(--linea);border-radius:999px;text-decoration:none;color:var(--texto)}
+.redes a:hover{border-color:var(--texto)}
+.redes svg{flex:none}
+@media (max-width:860px){ .pie{grid-template-columns:1fr 1fr} .pie-bloque:first-child{grid-column:1/-1} }
+@media (max-width:540px){ .pie{grid-template-columns:1fr} .redes span{position:absolute;left:-9999px} .redes a{padding:0 12px} }
 
 .sonido{position:fixed;z-index:90;left:max(18px, var(--borde-l));bottom:calc(18px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:10px;
   min-height:46px;padding:0 18px 0 14px;border-radius:999px;border:1px solid var(--linea);background:color-mix(in srgb, var(--fondo) 80%, transparent);
@@ -192,6 +217,11 @@ h3{font-size:var(--t-m);font-weight:650;font-variation-settings:"wdth" 106;lette
 .interna p{max-width:38em;color:var(--tenue)}
 .interna p + p{margin-top:14px}
 .interna .acciones{margin-top:32px}
+.interna .lead{font-size:var(--t-m);color:var(--texto);max-width:34em}
+.migas{font-size:var(--t-xs);color:var(--tenue);margin-bottom:22px;display:flex;flex-wrap:wrap;gap:6px}
+.migas a{color:var(--tenue)}
+.lista{margin:12px 0 0;padding-left:1.2em;color:var(--tenue);max-width:38em;display:grid;gap:8px}
+.lista li::marker{color:var(--oro)}
 
 /* ---------- Pantallas medianas y móviles ---------- */
 @media (max-width:1100px){

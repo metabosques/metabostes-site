@@ -9,7 +9,13 @@ Sitio estático en HTML, CSS y JS, sin dependencias ni paso de compilación. Tod
 - `404.html` – página de error
 - `styles.css`, `script.js` – estilos y comportamiento (menú móvil, curvas de nivel generadas y visor de fotos)
 - `assets/` – logo, favicon, icono de WhatsApp e imagen para redes (`og-image.jpg`)
-- `robots.txt`, `sitemap.xml`, `CNAME`
+- `servicios/<servicio>/index.html` – una página por servicio (URL limpia /servicios/<servicio>/)
+- `robots.txt`, `sitemap.xml`, `llms.txt` (resumen para buscadores de IA), `CNAME`
+
+## Páginas de servicio, pie, datos estructurados y sitemap
+Se generan con `python3 herramientas/generar_paginas.py`. Ahí están los textos de los servicios y las preguntas frecuentes.
+Las redes sociales del pie se cambian en `herramientas/redes.json` (una red vacía no se muestra). Después de editar, corre el script y publica.
+El script reescribe lo que hay entre los comentarios `<!-- pie:... -->`, `<!-- schema:... -->` y `<!-- faq:... -->`; no edites a mano esas partes.
 
 ## Formulario
 Usa FormSubmit y llega a amoreno@metabosques.com. La primera vez que alguien lo envíe, FormSubmit manda un correo de activación a esa dirección: hay que confirmarlo una sola vez.
