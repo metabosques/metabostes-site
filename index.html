@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="es-CO">
+<html lang="es-CO" data-escena="ceiba">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Metabosques | Restauración ecológica y gestión forestal en Colombia</title>
-  <meta name="description" content="Diseñamos, tramitamos y ejecutamos planes de compensación, restauración ecológica y aprovechamiento forestal para empresas y entidades públicas en Colombia.">
+  <meta name="description" content="Restauramos ecosistemas pieza por pieza: diseñamos, tramitamos y ejecutamos compensaciones, restauración ecológica y aprovechamiento forestal para empresas y entidades públicas en Colombia.">
   <link rel="canonical" href="https://metabosques.com/">
-  <meta name="theme-color" content="#0E2A23">
+  <meta name="theme-color" content="#0F2A22">
   <link rel="icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/logo.png">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CO">
   <meta property="og:site_name" content="Metabosques">
-  <meta property="og:title" content="Metabosques | Restauración ecológica y gestión forestal">
+  <meta property="og:title" content="Metabosques | Restauramos ecosistemas pieza por pieza">
   <meta property="og:description" content="Compensaciones, restauración ecológica, aprovechamiento forestal y consultoría ambiental en Colombia.">
   <meta property="og:url" content="https://metabosques.com/">
   <meta property="og:image" content="https://metabosques.com/assets/og-image.jpg">
@@ -21,7 +21,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -43,112 +43,94 @@
   <a class="skip" href="#contenido">Saltar al contenido</a>
 
   <header class="top" id="top">
-    <div class="wrap">
-      <a class="marca" href="#inicio" aria-label="Metabosques, inicio">
-        <img src="assets/logo.png" alt="" width="40" height="40">
-        <span>Metabosques</span>
-      </a>
-      <nav class="nav" id="nav" aria-label="Principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#como-trabajamos">Cómo trabajamos</a>
-        <a href="#en-campo">En campo</a>
-        <a href="#nosotros">Nosotros</a>
-        <a class="btn btn-cinta" href="#contacto">Cotizar un proyecto</a>
-      </nav>
-      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menú</button>
-    </div>
+    <a class="marca" href="#inicio" aria-label="Metabosques, inicio">
+      <img src="assets/logo.png" alt="" width="36" height="36">
+      <span>Metabosques</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#como-trabajamos">Cómo trabajamos</a>
+      <a href="#en-campo">En campo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a class="btn btn-oro" href="#contacto">Cotizar un proyecto</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
   </header>
 
+  <div class="escenario" id="escenario">
+    <button class="figura" id="figura" type="button" aria-label="Mostrar otra especie"></button>
+    <p class="ficha" id="ficha" aria-live="polite">
+      <span class="ficha-nombre" id="ficha-nombre">Ceiba</span>
+      <i class="ficha-cientifico" id="ficha-cientifico">Ceiba pentandra</i>
+      <span class="ficha-lugar" id="ficha-lugar">Bosque seco tropical</span>
+    </p>
+  </div>
+
   <main id="contenido">
-    <section class="portada" id="inicio">
-      <img class="portada-foto" src="assets/fotos/comunidad-aerea-g.webp" srcset="assets/fotos/comunidad-aerea-p.webp 640w, assets/fotos/comunidad-aerea-g.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Vista aérea de una jornada de campo con la comunidad" fetchpriority="high">
-      <canvas id="curvas" aria-hidden="true"></canvas>
-      <div class="wrap">
-        <h1>Restauración ecológica y gestión forestal, de la licencia al último monitoreo.</h1>
-        <p class="lead">Diseñamos, tramitamos y ejecutamos planes de compensación, restauración y aprovechamiento forestal para empresas y entidades públicas en Colombia.</p>
+    <section class="seccion portada" id="inicio" data-escena="ceiba" aria-labelledby="t-inicio">
+      <div class="columna">
+        <h1 id="t-inicio">Restauramos ecosistemas pieza por pieza.</h1>
+        <p class="lead">Diseñamos, tramitamos y ejecutamos compensaciones, restauración ecológica y aprovechamiento forestal para empresas y entidades públicas en Colombia.</p>
         <div class="acciones">
-          <a class="btn btn-cinta" href="#contacto">Cotizar un proyecto</a>
-          <a class="btn btn-claro" href="https://wa.me/573007925238?text=Hola%20Metabosques%2C%20quisiera%20informaci%C3%B3n%20sobre%20un%20proyecto" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a class="btn btn-oro" href="#contacto">Cotizar un proyecto</a>
+          <a class="btn btn-linea" href="https://wa.me/573007925238?text=Hola%20Metabosques%2C%20quisiera%20informaci%C3%B3n%20sobre%20un%20proyecto" target="_blank" rel="noopener">Escribir por WhatsApp</a>
         </div>
+        <p class="nota">Cada especie de esta página está hecha de 48 piezas que se rearman mientras bajas. Un ecosistema fragmentado se recupera igual: una pieza a la vez.</p>
       </div>
     </section>
 
-    <section class="banda" id="servicios" aria-labelledby="t-servicios">
-      <div class="wrap">
-        <div class="encabezado-banda">
-          <h2 id="t-servicios">Qué hacemos</h2>
-          <p>Cubrimos el ciclo técnico completo de una obligación ambiental: el estudio, el trámite ante la autoridad, la ejecución en campo y los informes de cumplimiento.</p>
-        </div>
+    <section class="seccion" id="servicios" data-escena="colibri" aria-labelledby="t-servicios">
+      <div class="columna">
+        <h2 id="t-servicios">Qué hacemos</h2>
+        <p class="intro">Cubrimos el ciclo técnico completo de una obligación ambiental: el estudio, el trámite ante la autoridad, la ejecución en campo y los informes de cumplimiento.</p>
         <ul class="servicios">
-          <li class="servicio">
+          <li>
             <h3>Restauración ecológica y compensaciones</h3>
             <p>Diseñamos e implementamos planes de compensación biótica y forestal con restauración activa, pasiva y enriquecimiento con especies nativas.</p>
-            <ul class="entregables" aria-label="Entregables">
-              <li>Plan de compensación</li>
-              <li>Establecimiento y mantenimiento</li>
-              <li>Informes de cumplimiento (ICA)</li>
-            </ul>
+            <p class="entrega">Entregamos el plan de compensación, el establecimiento y mantenimiento, y los informes de cumplimiento (ICA).</p>
           </li>
-          <li class="servicio">
+          <li>
             <h3>Aprovechamientos forestales sostenibles</h3>
             <p>Formulamos, tramitamos y ejecutamos planes de aprovechamiento con gestión técnica ante las corporaciones autónomas regionales.</p>
-            <ul class="entregables" aria-label="Entregables">
-              <li>Inventario forestal</li>
-              <li>Marcación y cubicación</li>
-              <li>Trámite del permiso y salvoconductos</li>
-            </ul>
+            <p class="entrega">Entregamos el inventario forestal, la marcación y cubicación, y el trámite del permiso y los salvoconductos.</p>
           </li>
-          <li class="servicio">
+          <li>
             <h3>Consultoría ambiental</h3>
             <p>Estudios de impacto, planes de manejo y acompañamiento en licencias y permisos ambientales, con análisis espacial en SIG.</p>
-            <ul class="entregables" aria-label="Entregables">
-              <li>EIA y planes de manejo</li>
-              <li>Monitoreos de fauna y flora</li>
-              <li>Cartografía SIG</li>
-            </ul>
+            <p class="entrega">Entregamos EIA y planes de manejo, monitoreos de fauna y flora, y cartografía SIG.</p>
           </li>
-          <li class="servicio">
+          <li>
             <h3>Mantenimiento y obras ambientales</h3>
             <p>Mantenimiento de áreas verdes y zonas de compensación, revegetalización y obras civiles menores con criterio paisajístico.</p>
-            <ul class="entregables" aria-label="Entregables">
-              <li>Rocería y revegetalización</li>
-              <li>Limpieza de paneles solares</li>
-              <li>Obras civiles menores</li>
-            </ul>
+            <p class="entrega">Incluye rocería y revegetalización, limpieza de paneles solares y obras civiles menores.</p>
           </li>
-          <li class="servicio">
+          <li>
             <h3>NaturaUnidad</h3>
             <p>Soluciones basadas en la naturaleza para metas corporativas de carbono y biodiversidad, medidas con indicadores verificables.</p>
-            <ul class="entregables" aria-label="Entregables">
-              <li>Línea base de biodiversidad</li>
-              <li>Indicadores verificables</li>
-              <li>Reportes de sostenibilidad</li>
-            </ul>
+            <p class="entrega">Entregamos la línea base de biodiversidad, indicadores verificables y reportes de sostenibilidad.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="banda" id="como-trabajamos" aria-labelledby="t-proceso">
-      <div class="wrap">
-        <div class="encabezado-banda">
-          <h2 id="t-proceso">Cómo trabajamos</h2>
-          <p>Un solo equipo responde por el proyecto desde la primera visita hasta el último informe que recibe la autoridad ambiental.</p>
-        </div>
+    <section class="seccion" id="como-trabajamos" data-escena="plantula" aria-labelledby="t-proceso">
+      <div class="columna">
+        <h2 id="t-proceso">Cómo trabajamos</h2>
+        <p class="intro">Un solo equipo responde por el proyecto desde la primera visita hasta el último informe que recibe la autoridad ambiental.</p>
         <ol class="proceso">
-          <li class="paso">
+          <li>
             <h3>Visita y diagnóstico</h3>
             <p>Reconocemos el predio, revisamos la obligación y definimos el alcance técnico.</p>
           </li>
-          <li class="paso">
+          <li>
             <h3>Diseño y trámite</h3>
             <p>Formulamos el plan y lo gestionamos ante la autoridad ambiental competente.</p>
           </li>
-          <li class="paso">
+          <li>
             <h3>Ejecución en campo</h3>
             <p>Establecemos la intervención con material vegetal nativo y mano de obra local.</p>
           </li>
-          <li class="paso">
+          <li>
             <h3>Monitoreo e informes</h3>
             <p>Hacemos mantenimiento, medimos indicadores y entregamos los informes de cumplimiento.</p>
           </li>
@@ -156,9 +138,9 @@
       </div>
     </section>
 
-    <section class="banda" id="en-campo" aria-labelledby="t-campo">
-      <div class="wrap">
-        <div class="encabezado-banda">
+    <section class="seccion campo" id="en-campo" data-escena="fragmentos" aria-labelledby="t-campo">
+      <div class="campo-wrap">
+        <div class="campo-encabezado">
           <h2 id="t-campo">En campo</h2>
           <p>Vivero, siembra y monitoreo con nuestro equipo en costa, humedales y sabana.</p>
         </div>
@@ -238,50 +220,46 @@
       </div>
     </dialog>
 
-    <section class="banda" id="nosotros" aria-labelledby="t-nosotros">
-      <div class="wrap nosotros">
-        <div class="texto">
-          <h2 id="t-nosotros">Nosotros</h2>
-          <p>Metabosques es una empresa ambiental colombiana con sede en Medellín. Trabajamos con empresas, entidades públicas y comunidades para cumplir obligaciones ambientales con soluciones basadas en ciencia, en la normativa vigente y en la participación local.</p>
-          <p>Nuestro equipo multidisciplinario estructura proyectos medibles y trazables en distintos ecosistemas del país.</p>
-        </div>
-        <div class="cifras">
-          <div class="cifra"><b>250 ha</b><span>restauradas</span></div>
-          <div class="cifra"><b>120.000</b><span>árboles sembrados</span></div>
-        </div>
+    <section class="seccion" id="nosotros" data-escena="rana" aria-labelledby="t-nosotros">
+      <div class="columna">
+        <h2 id="t-nosotros">Nosotros</h2>
+        <p class="intro">Metabosques es una empresa ambiental colombiana con sede en Medellín. Trabajamos con empresas, entidades públicas y comunidades para cumplir obligaciones ambientales con soluciones basadas en ciencia, en la normativa vigente y en la participación local.</p>
+        <p>Nuestro equipo multidisciplinario estructura proyectos medibles y trazables en distintos ecosistemas del país.</p>
+        <dl class="cifras">
+          <div><dt>Hectáreas restauradas</dt><dd>250</dd></div>
+          <div><dt>Árboles sembrados</dt><dd>120.000</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section class="banda" id="contacto" aria-labelledby="t-contacto">
-      <div class="wrap contacto">
-        <div class="intro">
-          <h2 id="t-contacto">Cuéntanos tu proyecto</h2>
-          <p>¿Tienes una obligación de compensación, un permiso de aprovechamiento o un predio para restaurar? Te respondemos en un día hábil.</p>
-          <ul class="datos">
-            <li><span>WhatsApp y teléfono</span><a href="https://wa.me/573007925238" target="_blank" rel="noopener">+57 300 792 5238</a></li>
-            <li><span>Correo</span><a href="mailto:amoreno@metabosques.com">amoreno@metabosques.com</a></li>
-            <li><span>Sede</span><strong>Medellín, Colombia</strong></li>
-          </ul>
-        </div>
+    <section class="seccion" id="contacto" data-escena="morpho" aria-labelledby="t-contacto">
+      <div class="columna">
+        <h2 id="t-contacto">Cuéntanos tu proyecto</h2>
+        <p class="intro">¿Tienes una obligación de compensación, un permiso de aprovechamiento o un predio para restaurar? Te respondemos en un día hábil.</p>
+        <ul class="datos">
+          <li><span>WhatsApp y teléfono</span><a href="https://wa.me/573007925238" target="_blank" rel="noopener">+57 300 792 5238</a></li>
+          <li><span>Correo</span><a href="mailto:amoreno@metabosques.com">amoreno@metabosques.com</a></li>
+          <li><span>Sede</span><strong>Medellín, Colombia</strong></li>
+        </ul>
 
         <form class="formulario" id="form-contacto" action="https://formsubmit.co/amoreno@metabosques.com" method="POST">
-          <div class="campo">
+          <div class="campo-f">
             <label for="f-nombre">Nombre</label>
             <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
           </div>
-          <div class="campo">
+          <div class="campo-f">
             <label for="f-empresa">Empresa o entidad <small>(opcional)</small></label>
             <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
           </div>
-          <div class="campo">
+          <div class="campo-f">
             <label for="f-correo">Correo</label>
             <input id="f-correo" name="email" type="email" autocomplete="email" required>
           </div>
-          <div class="campo">
+          <div class="campo-f">
             <label for="f-tel">Teléfono <small>(opcional)</small></label>
             <input id="f-tel" name="telefono" type="tel" autocomplete="tel">
           </div>
-          <div class="campo ancho">
+          <div class="campo-f ancho">
             <label for="f-tipo">¿Qué necesitas?</label>
             <select id="f-tipo" name="necesidad" required>
               <option value="">Elige una opción</option>
@@ -293,7 +271,7 @@
               <option>Otro</option>
             </select>
           </div>
-          <div class="campo ancho">
+          <div class="campo-f ancho">
             <label for="f-mensaje">Cuéntanos sobre el proyecto</label>
             <textarea id="f-mensaje" name="mensaje" rows="5" placeholder="Ubicación, área aproximada, autoridad ambiental y plazos" required></textarea>
           </div>
@@ -305,24 +283,22 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://metabosques.com/gracias.html">
           <input class="oculto" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button class="btn btn-bosque" type="submit">Enviar solicitud</button>
+          <button class="btn btn-oro" type="submit">Enviar solicitud</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="pie">
-    <div class="wrap">
-      <p>© <span id="anio">2026</span> Metabosques S.A.S. Medellín, Colombia.</p>
-      <nav aria-label="Legal">
-        <a href="politica-privacidad.html">Política de privacidad</a>
-        <a href="mailto:amoreno@metabosques.com">amoreno@metabosques.com</a>
-      </nav>
-    </div>
+    <p>© <span id="anio">2026</span> Metabosques S.A.S. Medellín, Colombia.</p>
+    <nav aria-label="Legal">
+      <a href="politica-privacidad.html">Política de privacidad</a>
+      <a href="mailto:amoreno@metabosques.com">amoreno@metabosques.com</a>
+    </nav>
   </footer>
 
   <a class="wa" href="https://wa.me/573007925238?text=Hola%20Metabosques%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" aria-label="Escribir a Metabosques por WhatsApp">
-    <img src="assets/wa.svg" alt="" width="30" height="30">
+    <img src="assets/wa.svg" alt="" width="28" height="28">
   </a>
 
   <script src="script.js"></script>

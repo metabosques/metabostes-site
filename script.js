@@ -1,4 +1,21 @@
+/* Metabosques — figuras por piezas.
+   Cada especie es una lista de 48 triángulos [x1,y1,x2,y2,x3,y3,color,capa] en un lienzo de 100×100.
+   Las coordenadas salen de herramientas/figuras.py (siluetas trianguladas). La pieza i de una
+   especie se transforma en la pieza i de la siguiente con una transición CSS de clip-path. */
+var FIGURAS = {"ceiba":[[27.6,40.16,30.29,49.2,19.69,49.15,"#368047",3],[20.21,49.28,11.67,45.11,16.0,36.65,"#408245",3],[39.65,46.0,42.89,43.67,48.32,48.15,"#5c4530",1],[40.34,46.08,32.4,38.66,29.76,49.25,"#3a8c4f",3],[40.3,46.18,35.89,41.67,33.65,44.0,"#6b5038",1],[25.03,31.65,27.85,40.5,19.85,49.31,"#5ead61",3],[19.99,49.35,15.69,36.83,25.19,31.7,"#4c8f4a",3],[40.06,46.35,43.35,44.0,35.69,41.83,"#57412d",1],[32.84,38.9,24.84,31.69,30.03,49.35,"#52a457",3],[45.0,35.65,50.24,49.26,39.68,46.15,"#307d48",3],[29.93,25.66,40.21,46.28,24.68,31.87,"#61ae5b",3],[40.11,46.33,40.34,34.4,29.8,25.71,"#529a51",3],[39.95,22.65,45.34,36.1,39.95,46.35,"#61ad61",3],[40.16,34.81,40.2,22.71,29.66,25.91,"#6eb74d",3],[39.84,22.69,50.34,34.4,50.08,49.34,"#428446",3],[51.25,22.76,39.69,22.83,50.13,34.83,"#77bb61",3],[39.68,23.15,56.35,17.94,46.9,16.66,"#b7dc8a",3],[39.65,23.05,62.34,23.06,56.25,17.75,"#8ec765",3],[62.31,22.84,50.77,22.74,49.83,34.8,"#69b35a",3],[61.23,34.76,62.17,22.7,49.69,34.66,"#4f964e",3],[49.87,34.17,60.32,46.14,49.83,49.3,"#27673c",3],[60.13,46.33,61.25,34.26,49.69,34.33,"#327642",3],[72.3,23.81,65.97,35.35,61.74,22.76,"#529a50",3],[66.35,35.03,59.92,46.34,61.98,22.65,"#408b4c",3],[71.98,23.65,65.73,35.23,79.35,30.02,"#4e9e55",3],[65.73,34.77,59.76,46.26,79.29,29.81,"#2c6d3e",3],[69.17,37.88,79.21,29.72,67.87,49.32,"#296b3e",3],[66.3,40.83,59.83,46.3,57.65,44.03,"#5c4430",2],[78.87,29.67,79.93,48.34,87.31,34.84,"#256139",3],[73.15,39.53,79.06,29.65,80.1,48.34,"#31824d",3],[66.2,40.72,59.7,46.18,67.35,42.96,"#70533a",2],[59.66,46.1,69.68,37.7,68.15,49.32,"#205433",3],[51.68,48.14,60.35,46.0,58.19,43.71,"#624933",2],[87.08,34.66,89.32,44.14,79.76,48.25,"#215b39",3],[67.7,49.18,73.48,39.15,80.32,48.13,"#2c784b",3],[51.66,47.93,60.3,45.83,53.87,52.32,"#5f4631",2],[57.87,78.68,55.69,87.17,67.31,88.16,"#38281e",0],[55.0,67.65,51.84,82.31,58.26,79.23,"#5a4030",0],[58.21,78.72,51.66,81.93,56.05,87.35,"#453124",0],[44.75,68.24,54.08,49.66,55.18,68.3,"#7b5b41",0],[55.24,67.74,52.05,82.35,44.73,67.78,"#543c2c",0],[52.23,81.73,47.77,81.73,50.0,89.35,"#493426",0],[52.22,82.28,47.98,82.35,44.88,67.67,"#5a402f",0],[48.34,81.93,41.79,78.72,43.95,87.35,"#35261c",0],[48.16,82.31,41.74,79.23,45.0,67.65,"#5d4331",0],[44.91,68.34,45.87,49.67,54.24,49.75,"#6d523a",0],[44.31,87.17,32.69,88.16,42.13,78.68,"#2f2219",0],[48.34,47.93,46.13,52.32,39.7,45.83,"#533d2b",1]],"colibri":[[4.66,33.92,31.35,38.52,31.32,41.63,"#b4bbb3",0],[34.86,37.14,38.65,35.95,37.71,39.53,"#0a1a1e",5],[31.7,34.81,42.33,33.88,29.74,41.24,"#6de6b0",3],[50.06,29.65,52.81,39.17,43.76,42.25,"#345180",2],[31.66,35.08,42.35,34.01,37.0,32.15,"#6ae7ae",3],[55.32,37.14,47.9,40.33,45.85,26.68,"#486b9c",1],[50.45,32.35,45.65,26.96,57.3,23.81,"#5d7fad",1],[47.95,14.65,52.84,19.41,45.86,27.32,"#6a8cb6",1],[52.56,19.15,57.35,24.03,45.7,27.18,"#6283ad",1],[55.05,37.35,50.16,32.09,57.13,23.68,"#45648d",1],[47.72,15.21,58.35,11.0,54.06,6.65,"#628fc3",1],[47.66,14.91,57.12,24.33,58.19,10.71,"#5781b3",1],[52.22,39.21,49.79,29.72,63.3,42.19,"#43669c",2],[58.09,19.66,60.76,31.24,49.69,30.15,"#456697",2],[65.85,24.97,57.81,19.7,60.45,31.35,"#6c90c2",2],[68.14,11.68,70.79,21.19,57.67,20.1,"#6b94c9",2],[60.72,30.73,63.2,42.29,49.69,29.83,"#3e5d8c",2],[74.53,15.35,67.66,12.07,80.25,4.76,"#79a3d6",2],[70.77,20.78,73.24,30.26,57.68,19.87,"#5b86c1",2],[67.75,11.76,70.31,21.29,81.35,18.04,"#789fd1",2],[81.15,18.32,74.2,15.18,80.07,4.66,"#88afdc",2],[79.88,4.67,80.95,18.35,85.28,7.79,"#b1cceb",2],[73.34,30.07,65.42,24.66,60.18,31.13,"#668cc1",2],[70.18,20.85,72.91,30.34,81.27,17.78,"#8aabd6",2],[68.08,36.34,73.32,29.87,60.16,30.93,"#658abe",2],[62.95,42.35,68.35,35.97,60.31,30.7,"#577cb3",2],[67.77,58.73,74.98,72.85,83.32,71.15,"#1a5260",6],[67.95,58.65,75.23,72.76,63.65,66.01,"#16565b",6],[61.87,52.67,63.98,64.35,67.33,60.12,"#0e6963",3],[73.05,83.35,68.2,74.32,75.2,72.21,"#235c75",6],[68.43,74.84,63.75,65.76,75.34,72.59,"#164a53",6],[63.98,66.35,60.81,54.71,68.34,58.91,"#17756d",6],[54.88,48.33,52.24,38.76,63.35,41.94,"#3c5e93",2],[62.07,52.66,55.69,62.16,64.21,64.28,"#0e6c64",3],[62.33,53.12,54.85,55.82,53.85,44.69,"#0f7d6b",3],[62.29,52.8,47.65,58.02,56.05,62.35,"#0c5e53",3],[55.25,55.75,47.78,58.27,54.07,44.66,"#16a389",3],[46.72,48.29,54.22,44.73,47.92,58.34,"#1aa485",3],[39.65,51.94,47.15,48.18,48.18,58.3,"#1db08d",3],[52.66,38.69,55.23,48.26,43.65,41.95,"#2a446d",2],[46.85,48.82,54.35,45.06,45.82,38.7,"#1a9272",3],[39.78,52.27,47.28,48.71,46.08,38.66,"#22b68d",3],[36.79,46.72,37.72,51.21,43.31,52.17,"#d3377c",4],[37.19,46.71,38.22,51.27,32.67,47.39,"#e04c8d",4],[46.23,38.74,40.02,52.35,32.65,47.05,"#29b68a",3],[32.79,47.78,31.76,43.74,37.34,47.09,"#ee3e8a",4],[29.65,41.02,42.25,33.76,32.89,47.33,"#43d49a",3],[32.75,47.24,42.09,33.66,46.34,38.94,"#43cb9a",3]],"plantula":[[27.65,47.98,35.07,44.66,40.29,52.19,"#72bf76",2],[16.65,42.01,19.91,35.16,28.25,48.24,"#80cd5e",2],[17.07,42.34,20.32,35.37,10.7,33.81,"#bbe695",2],[23.65,41.69,28.0,48.35,32.22,37.23,"#61be56",2],[27.78,48.27,35.32,45.14,32.02,37.15,"#73c373",2],[19.69,35.34,23.88,42.08,32.35,37.46,"#7bc968",2],[34.67,44.89,42.2,41.71,40.06,52.34,"#51a85c",2],[34.88,45.33,42.35,42.03,31.74,37.26,"#6ebb75",2],[46.07,45.66,50.35,50.05,39.69,52.16,"#3b9250",2],[41.95,41.65,46.34,45.93,39.84,52.31,"#469f57",2],[49.37,47.67,52.58,47.66,52.02,62.35,"#5ea754",1],[54.34,44.07,49.95,48.35,47.84,37.69,"#9bd673",4],[47.83,38.31,54.85,33.03,50.47,26.65,"#c6ea93",4],[47.65,37.97,54.64,32.68,54.11,44.33,"#c2e7a1",4],[58.21,45.28,51.74,46.24,58.11,35.67,"#37884b",3],[68.21,27.72,66.21,36.28,57.68,36.14,"#65b76b",3],[64.3,44.18,57.82,45.3,57.88,35.67,"#3e8d4e",3],[66.27,35.78,64.08,44.34,57.7,35.83,"#60b36c",3],[80.24,21.75,78.73,30.26,67.66,28.06,"#98d589",3],[65.68,36.15,67.87,27.67,77.3,38.18,"#66bd66",3],[70.84,41.06,63.79,44.28,65.93,35.66,"#5bb164",3],[78.81,29.84,77.13,38.32,67.7,27.82,"#77c76f",3],[89.23,24.76,91.29,18.81,79.65,22.01,"#afe378",3],[79.89,21.67,78.23,30.22,87.31,30.16,"#aade90",3],[77.35,37.98,70.42,41.34,65.68,35.86,"#5cb75f",3],[87.12,30.33,89.34,24.41,79.71,21.81,"#bee79f",3],[78.27,29.74,76.8,38.28,87.32,29.86,"#93d47f",3],[71.77,76.74,73.83,87.3,84.35,83.03,"#4a3220",0],[65.66,80.69,74.18,87.3,72.1,76.66,"#614229",0],[57.67,74.37,66.07,81.09,72.35,76.98,"#64452c",0],[74.34,87.09,65.9,80.41,61.69,88.16,"#462f20",0],[66.35,80.72,57.82,74.2,62.0,88.35,"#614229",0],[58.0,74.15,53.65,81.78,62.18,88.3,"#533823",0],[53.9,81.41,49.69,89.16,62.34,88.09,"#2b1d14",0],[54.17,82.06,58.26,74.26,45.67,81.87,"#503722",0],[58.33,74.38,49.83,74.19,45.74,81.99,"#815938",0],[50.0,89.35,54.3,81.57,45.7,81.57,"#493120",0],[47.81,61.71,52.07,61.66,53.07,76.34,"#77ba5f",1],[53.22,76.28,46.84,76.31,47.95,61.65,"#8bc770",1],[46.1,81.41,50.31,89.16,37.66,88.09,"#473121",0],[50.3,74.32,41.7,74.32,46.0,82.1,"#67472d",0],[42.0,74.15,46.35,81.78,37.82,88.3,"#4d3421",0],[33.65,80.72,42.18,74.2,38.0,88.35,"#392618",0],[25.66,87.09,34.1,80.41,38.31,88.16,"#473020",0],[42.33,74.37,33.93,81.09,27.65,76.98,"#61432a",0],[34.34,80.69,25.82,87.3,27.9,76.66,"#5a3d26",0],[26.17,87.3,15.65,83.03,28.23,76.74,"#3b2819",0],[47.87,62.33,52.15,62.32,49.49,47.65,"#6bae5d",1]],"rana":[[36.29,39.81,36.27,46.22,23.65,41.97,"#f8be37",0],[66.34,41.93,33.68,41.86,33.74,56.23,"#ffd86c",4],[24.08,42.34,26.22,31.73,17.68,33.86,"#d39016",0],[23.73,42.23,25.86,31.68,36.34,40.09,"#f4bf4e",0],[18.25,34.25,16.11,27.67,10.65,31.0,"#c7780e",0],[18.0,34.35,20.21,26.72,15.73,27.78,"#c47d11",0],[17.74,34.23,19.89,26.67,26.34,32.07,"#dd9518",0],[15.92,28.34,13.82,20.7,20.31,27.16,"#ba740f",0],[39.1,34.33,34.69,31.16,39.08,23.66,"#2d1d07",5],[50.26,22.77,35.66,30.92,33.82,42.3,"#ffca45",4],[38.91,23.66,44.3,32.18,38.87,34.32,"#201505",5],[50.32,22.86,35.71,31.2,41.84,24.69,"#ffc334",4],[38.73,23.78,44.07,32.34,46.31,25.33,"#2f1e07",5],[50.0,22.65,33.67,42.13,66.33,42.13,"#ffe082",4],[55.93,32.34,61.27,23.78,53.69,25.33,"#392508",6],[49.68,22.86,64.29,31.2,58.16,24.69,"#ffc438",4],[61.13,34.32,61.09,23.66,55.7,32.18,"#241705",6],[49.74,22.77,66.18,42.3,64.34,30.92,"#ffc32b",4],[60.9,34.33,60.92,23.66,65.31,31.16,"#1e1304",6],[79.69,27.16,84.08,28.34,86.18,20.7,"#c37a10",1],[80.11,26.67,82.26,34.23,73.66,32.07,"#e7a024",1],[79.79,26.72,82.0,34.35,84.27,27.78,"#d98b13",1],[83.89,27.67,89.35,31.0,81.75,34.25,"#c0740e",1],[63.66,40.09,76.27,42.23,74.14,31.68,"#f4bc47",1],[73.78,31.73,75.92,42.34,82.32,33.86,"#d79317",1],[63.71,39.81,76.35,41.97,63.73,46.22,"#f7bb2f",1],[75.86,53.68,75.86,66.32,84.35,60.0,"#ecab31",3],[61.65,57.95,76.2,66.29,76.23,53.74,"#f4bc45",3],[82.1,70.34,75.65,66.05,84.19,59.7,"#c98515",3],[66.32,56.14,33.66,56.07,66.26,41.77,"#ffd15c",4],[82.35,69.95,75.9,65.66,73.81,76.3,"#e29718",3],[81.94,69.65,87.25,80.25,79.71,78.19,"#e38a10",3],[82.2,69.72,73.66,76.1,80.13,78.32,"#e39215",3],[61.79,57.72,76.34,66.07,61.73,68.23,"#f5b72d",3],[80.26,77.77,78.03,87.35,73.79,75.72,"#dc8b13",3],[62.31,66.16,37.66,66.07,66.3,55.81,"#fab52a",4],[62.28,65.8,49.68,73.14,56.0,72.35,"#f49f0c",4],[50.0,73.35,37.66,65.93,62.34,65.93,"#f7b235",4],[50.32,73.14,37.72,65.8,44.0,72.35,"#f5a51c",4],[66.35,55.94,33.66,55.91,37.73,66.22,"#fdc345",4],[26.21,75.72,19.74,77.77,21.97,87.35,"#e89314",2],[38.21,57.72,38.27,68.23,23.66,66.07,"#f5b82f",2],[26.34,76.1,17.8,69.72,19.87,78.32,"#e99717",2],[20.29,78.19,18.06,69.65,12.75,80.25,"#de8710",2],[26.19,76.3,17.65,69.95,24.1,65.66,"#e8a22b",2],[24.35,66.05,17.9,70.34,15.81,59.7,"#cf8915",2],[23.8,66.29,23.77,53.74,38.35,57.95,"#f4ba3f",2],[24.14,66.32,24.14,53.68,15.65,60.0,"#e79e15",2]],"morpho":[[23.66,46.08,32.0,37.65,40.31,48.16,"#217bf7",0],[27.25,32.76,24.15,46.32,10.65,37.96,"#295ee5",0],[20.84,28.92,10.94,38.35,4.71,25.8,"#1336a2",0],[26.75,32.75,23.81,46.29,40.29,29.81,"#3178ee",0],[30.2,19.71,27.3,33.18,10.71,38.19,"#153fae",0],[31.65,37.96,40.1,29.67,40.1,48.34,"#1880ff",0],[30.32,19.86,20.66,29.31,4.65,26.03,"#1641bd",0],[4.81,26.3,18.3,12.81,6.75,14.75,"#0c216e",0],[4.69,26.16,30.35,20.01,18.02,12.65,"#103091",0],[39.88,48.33,39.92,29.66,48.3,44.19,"#62b2ff",0],[29.9,19.67,26.75,33.25,40.33,30.1,"#2363e4",0],[49.41,37.33,42.85,19.68,44.33,19.26,"#463932",5],[47.72,46.34,48.97,35.65,51.16,35.69,"#2c2320",4],[47.59,46.28,51.03,35.65,52.37,46.31,"#2e2521",4],[50.59,37.33,55.67,19.26,57.15,19.68,"#4e3f38",6],[70.1,19.67,73.25,33.25,59.67,30.1,"#1a58d4",1],[81.98,12.65,95.31,26.16,69.65,20.01,"#103091",1],[60.12,48.33,51.7,44.19,60.08,29.66,"#6cb7ff",1],[81.7,12.81,95.19,26.3,93.25,14.75,"#0e2781",1],[69.68,19.86,79.34,29.31,95.35,26.03,"#113291",1],[59.9,29.67,68.35,37.96,59.9,48.34,"#177fff",1],[69.8,19.71,72.7,33.18,89.29,38.19,"#1644bb",1],[73.25,32.75,76.19,46.29,59.71,29.81,"#4283ef",1],[79.16,28.92,89.06,38.35,95.29,25.8,"#1338a8",1],[72.75,32.76,75.85,46.32,89.35,37.96,"#1849c7",1],[68.0,37.65,76.34,46.08,59.69,48.16,"#0d6ef7",1],[64.88,62.83,76.34,53.94,61.75,49.76,"#1b70f2",3],[75.85,53.69,83.05,77.35,85.34,63.91,"#13379f",3],[83.22,77.27,68.22,74.21,76.0,53.65,"#1745c2",3],[50.79,58.28,51.74,49.77,62.33,49.88,"#43acff",3],[68.6,74.33,53.67,71.13,76.22,53.73,"#1859d5",3],[53.81,71.29,65.34,62.6,62.05,49.65,"#4997fc",3],[83.32,76.86,61.65,83.04,71.97,85.35,"#0d2570",3],[83.35,77.0,53.69,70.85,61.8,83.28,"#1744be",3],[62.19,49.71,53.95,71.35,50.67,57.88,"#449eff",3],[47.68,45.67,52.28,45.66,51.63,68.35,"#271f1b",4],[51.84,67.75,48.16,67.75,50.0,73.35,"#281f1b",4],[51.71,68.33,48.36,68.35,47.77,45.65,"#2c231e",4],[46.05,71.35,37.81,49.71,49.33,57.88,"#1d89ff",2],[38.2,83.28,16.65,77.0,46.31,70.85,"#1642b9",2],[34.88,62.17,46.34,71.07,31.23,74.22,"#286ae7",2],[38.35,83.04,16.68,76.86,28.03,85.35,"#12339d",2],[34.66,62.6,46.19,71.29,37.95,49.65,"#4e9afc",2],[49.21,58.28,37.67,49.88,48.26,49.77,"#7bc5ff",2],[23.81,53.71,35.34,62.43,31.54,74.35,"#1b5ada",2],[31.78,74.21,16.78,77.27,24.0,53.65,"#133aa3",2],[16.95,77.35,24.15,53.69,14.66,63.91,"#143bab",2],[23.66,53.94,35.12,62.83,38.25,49.76,"#3580f3",2]]};
+
+var FICHAS = {
+  ceiba:    { nombre: 'Ceiba',          cientifico: 'Ceiba pentandra',        lugar: 'Bosque seco tropical' },
+  colibri:  { nombre: 'Colibrí',        cientifico: 'Trochilidae',            lugar: 'Polinizador de los bosques andinos' },
+  plantula: { nombre: 'Plántula nativa', cientifico: '',                      lugar: 'Del vivero al terreno' },
+  rana:     { nombre: 'Rana dorada',    cientifico: 'Phyllobates terribilis', lugar: 'Endémica del Pacífico colombiano' },
+  morpho:   { nombre: 'Mariposa morfo', cientifico: 'Morpho',                 lugar: 'Bosque húmedo tropical' }
+};
+var ORDEN = ['ceiba', 'colibri', 'plantula', 'rana', 'morpho'];
+
 (function () {
+  var raiz = document.documentElement;
+
   // Menú móvil
   var top = document.getElementById('top');
   var btn = document.getElementById('menu-btn');
@@ -16,132 +33,147 @@
       });
     });
   }
-
   var anio = document.getElementById('anio');
   if (anio) anio.textContent = new Date().getFullYear();
 
-  // Curvas de nivel generadas (marching squares sobre un relieve suave)
-  function rng(seed) {
-    return function () {
-      seed = (seed * 1664525 + 1013904223) >>> 0;
-      return seed / 4294967296;
-    };
+  // ---------- Figura ----------
+  var figura = document.getElementById('figura');
+  if (!figura) return;
+  var N = FIGURAS.ceiba.length;
+  var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var piezas = [];
+  for (var i = 0; i < N; i++) {
+    var p = document.createElement('span');
+    p.className = 'pieza';
+    p.style.setProperty('--d', ((i * 7) % 16) * 22 + 'ms');
+    figura.appendChild(p);
+    piezas.push(p);
   }
 
-  function relieve(seed, n) {
-    var r = rng(seed), cerros = [];
-    for (var i = 0; i < n; i++) {
-      cerros.push({ x: r(), y: r(), s: 0.08 + r() * 0.22, h: (r() < 0.25 ? -0.6 : 1) * (0.4 + r() * 0.8) });
-    }
-    return function (x, y) {
-      var v = 0;
-      for (var i = 0; i < cerros.length; i++) {
-        var c = cerros[i], dx = x - c.x, dy = y - c.y;
-        v += c.h * Math.exp(-(dx * dx + dy * dy) / (2 * c.s * c.s));
-      }
-      return v + 0.15 * Math.sin(x * 7.3 + y * 3.1) + 0.1 * Math.sin(y * 9.7 - x * 2.2);
-    };
+  function poligono(t) {
+    return 'polygon(' + t[0] + '% ' + t[1] + '%, ' + t[2] + '% ' + t[3] + '%, ' + t[4] + '% ' + t[5] + '%)';
   }
 
-  function segmentos(f, w, h, paso, nivel) {
-    var cols = Math.ceil(w / paso) + 1, filas = Math.ceil(h / paso) + 1, g = [], s = [];
-    var asp = w / h;
-    for (var j = 0; j < filas; j++) {
-      g[j] = [];
-      for (var i = 0; i < cols; i++) g[j][i] = f((i * paso / w) * asp, j * paso / h);
-    }
-    function lerp(a, b) { return (nivel - a) / (b - a); }
-    for (var y = 0; y < filas - 1; y++) {
-      for (var x = 0; x < cols - 1; x++) {
-        var a = g[y][x], b = g[y][x + 1], c = g[y + 1][x + 1], d = g[y + 1][x];
-        var k = (a > nivel ? 8 : 0) | (b > nivel ? 4 : 0) | (c > nivel ? 2 : 0) | (d > nivel ? 1 : 0);
-        if (k === 0 || k === 15) continue;
-        var px = x * paso, py = y * paso;
-        var T = [px + lerp(a, b) * paso, py], R = [px + paso, py + lerp(b, c) * paso];
-        var B = [px + lerp(d, c) * paso, py + paso], L = [px, py + lerp(a, d) * paso];
-        var p = {1:[L,B],2:[B,R],3:[L,R],4:[T,R],5:[L,T,B,R],6:[T,B],7:[L,T],8:[L,T],9:[T,B],10:[T,R,L,B],11:[T,R],12:[L,R],13:[B,R],14:[L,B]}[k];
-        for (var m = 0; m < p.length; m += 2) s.push(p[m], p[m + 1]);
+  // Estado disperso: fragmentos pequeños repartidos por el escenario (semilla fija)
+  function dispersos() {
+    var s = 7, out = [];
+    function r() { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }
+    for (var i = 0; i < N; i++) {
+      var a = (i / N) * Math.PI * 2 + r() * 0.5, rad = 30 + r() * 18;
+      var cx = 50 + Math.cos(a) * rad, cy = 50 + Math.sin(a) * rad;
+      var tam = 1.6 + r() * 2.6, g = r() * Math.PI * 2, t = [];
+      for (var k = 0; k < 3; k++) {
+        var ang = g + k * 2.1 + r() * 0.5;
+        t.push(+(cx + Math.cos(ang) * tam).toFixed(2), +(cy + Math.sin(ang) * tam).toFixed(2));
       }
+      out.push(t);
     }
-    return s;
+    return out;
+  }
+  var DISPERSOS = dispersos();
+
+  var actual = null, listo = reducir;
+  function mostrar(nombre) {
+    if (nombre === actual) return;
+    actual = nombre;
+    if (nombre === 'fragmentos') {
+      piezas.forEach(function (p, i) {
+        p.style.clipPath = poligono(DISPERSOS[i]);
+        p.style.setProperty('--hx', '0%'); p.style.setProperty('--hy', '0%');
+      });
+      return;
+    }
+    var fig = FIGURAS[nombre];
+    if (!fig) return;
+    piezas.forEach(function (p, i) {
+      var t = fig[i];
+      p.style.clipPath = poligono(t);
+      p.style.backgroundColor = t[6];
+      p.style.zIndex = t[7];
+      // al pasar el cursor, cada pieza se separa un poco del centro
+      var cx = (t[0] + t[2] + t[4]) / 3, cy = (t[1] + t[3] + t[5]) / 3;
+      p.style.setProperty('--hx', ((cx - 50) * 0.06).toFixed(2) + '%');
+      p.style.setProperty('--hy', ((cy - 50) * 0.06).toFixed(2) + '%');
+    });
+    var f = FICHAS[nombre];
+    document.getElementById('ficha-nombre').textContent = f.nombre;
+    document.getElementById('ficha-cientifico').textContent = f.cientifico;
+    document.getElementById('ficha-lugar').textContent = f.lugar;
   }
 
-  function curvas(canvas, opts) {
-    if (!canvas || !canvas.getContext) return;
-    var ctx = canvas.getContext('2d');
-    var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var f = relieve(opts.seed, opts.cerros);
-    var dibujado = false;
-
-    function pintar(animar) {
-      var dpr = Math.min(window.devicePixelRatio || 1, 2);
-      var w = canvas.clientWidth, h = canvas.clientHeight;
-      if (!w || !h) return;
-      canvas.width = w * dpr; canvas.height = h * dpr;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.clearRect(0, 0, w, h);
-      var niveles = [];
-      for (var n = 0; n < opts.niveles; n++) niveles.push(-0.4 + n * (1.9 / opts.niveles));
-      var capas = niveles.map(function (nv) { return segmentos(f, w, h, opts.paso, nv); });
-
-      function trazar(i) {
-        var s = capas[i];
-        var destacada = i === opts.destacada;
-        ctx.strokeStyle = destacada ? 'rgba(233,185,73,.85)' : (i % 5 === 0 ? 'rgba(207,227,215,.55)' : 'rgba(207,227,215,.3)');
-        ctx.lineWidth = destacada ? 1.6 : (i % 5 === 0 ? 1.1 : 0.8);
-        ctx.beginPath();
-        for (var k = 0; k < s.length; k += 2) { ctx.moveTo(s[k][0], s[k][1]); ctx.lineTo(s[k + 1][0], s[k + 1][1]); }
-        ctx.stroke();
-      }
-
-      if (!animar || reducir) { for (var i = 0; i < capas.length; i++) trazar(i); return; }
-      var t0 = null, dur = 1400, hechos = 0;
-      function tick(t) {
-        if (t0 === null) t0 = t;
-        var meta = Math.min(capas.length, Math.ceil(((t - t0) / dur) * capas.length));
-        while (hechos < meta) trazar(hechos++);
-        if (hechos < capas.length) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    }
-
-    pintar(opts.animar && !dibujado);
-    dibujado = true;
-    var espera;
-    window.addEventListener('resize', function () {
-      clearTimeout(espera);
-      espera = setTimeout(function () { pintar(false); }, 150);
+  // Carga: las piezas empiezan dispersas y se arman en la ceiba
+  var escenaInicial = raiz.getAttribute('data-escena') || 'ceiba';
+  if (reducir) {
+    mostrar(escenaInicial);
+  } else {
+    figura.classList.add('sin-transicion');
+    piezas.forEach(function (p, i) {
+      p.style.clipPath = poligono(DISPERSOS[i]);
+      p.style.backgroundColor = FIGURAS[escenaInicial][i][6];
+    });
+    actual = 'fragmentos';
+    figura.getBoundingClientRect();
+    requestAnimationFrame(function () {
+      figura.classList.remove('sin-transicion');
+      setTimeout(function () { listo = true; mostrar(raiz.getAttribute('data-escena') || escenaInicial); }, 250);
     });
   }
 
-  curvas(document.getElementById('curvas'), { seed: 41, cerros: 9, niveles: 22, paso: 9, destacada: 13, animar: true });
+  // Clic en la figura: muestra la siguiente especie
+  figura.addEventListener('click', function () {
+    var k = ORDEN.indexOf(actual);
+    mostrar(ORDEN[(k + 1) % ORDEN.length]);
+  });
 
-  // Visor de fotos
+  // ---------- Escena según la sección visible ----------
+  var secciones = document.querySelectorAll('[data-escena]');
+  var enlaces = document.querySelectorAll('#nav a[href^="#"]');
+  function activar(sec) {
+    var escena = sec.getAttribute('data-escena');
+    raiz.setAttribute('data-escena', escena);
+    raiz.classList.toggle('en-portada', sec.id === 'inicio');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', getComputedStyle(raiz).getPropertyValue('--fondo').trim() || '#0F2A22');
+    enlaces.forEach(function (a) {
+      if (a.getAttribute('href') === '#' + sec.id) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+    if (listo) mostrar(escena);
+  }
+  raiz.classList.add('en-portada');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) { if (e.isIntersecting) activar(e.target); });
+    }, { rootMargin: '-48% 0px -48% 0px' });
+    secciones.forEach(function (s) { if (s.tagName === 'SECTION') obs.observe(s); });
+  }
+
+  // ---------- Visor de fotos ----------
   var visor = document.getElementById('visor');
   var botones = Array.prototype.slice.call(document.querySelectorAll('.foto-abrir'));
   if (visor && botones.length && typeof visor.showModal === 'function') {
     var vImg = document.getElementById('visor-img');
     var vTxt = document.getElementById('visor-texto');
     var vPos = document.getElementById('visor-pos');
-    var actual = 0, origen = null;
-    function mostrar(i) {
-      actual = (i + botones.length) % botones.length;
-      var img = botones[actual].querySelector('img');
+    var foto = 0, origen = null;
+    function ver(i) {
+      foto = (i + botones.length) % botones.length;
+      var img = botones[foto].querySelector('img');
       vImg.src = img.getAttribute('data-grande');
       vImg.alt = img.alt;
       vTxt.textContent = img.alt;
-      vPos.textContent = (actual + 1) + ' de ' + botones.length;
+      vPos.textContent = (foto + 1) + ' de ' + botones.length;
     }
     botones.forEach(function (b, i) {
-      b.addEventListener('click', function () { origen = b; mostrar(i); visor.showModal(); });
+      b.addEventListener('click', function () { origen = b; ver(i); visor.showModal(); });
     });
-    document.getElementById('visor-ant').addEventListener('click', function () { mostrar(actual - 1); });
-    document.getElementById('visor-sig').addEventListener('click', function () { mostrar(actual + 1); });
+    document.getElementById('visor-ant').addEventListener('click', function () { ver(foto - 1); });
+    document.getElementById('visor-sig').addEventListener('click', function () { ver(foto + 1); });
     document.getElementById('visor-cerrar').addEventListener('click', function () { visor.close(); });
     visor.addEventListener('click', function (e) { if (e.target === visor) visor.close(); });
     visor.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowRight') mostrar(actual + 1);
-      if (e.key === 'ArrowLeft') mostrar(actual - 1);
+      if (e.key === 'ArrowRight') ver(foto + 1);
+      if (e.key === 'ArrowLeft') ver(foto - 1);
     });
     visor.addEventListener('close', function () { if (origen) origen.focus(); });
   }
