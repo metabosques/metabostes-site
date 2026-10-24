@@ -7,7 +7,7 @@
   --texto:#E6EEE4;          /* liquen claro */
   --tenue:#A9BCAF;
   --linea:rgba(230,238,228,.16);
-  --oro:#F2B33D;            /* rana dorada: único acento de acción */
+  --oro:#F2B33D;            /* único acento de acción */
   --oro-tinta:#1C1406;
   --claro:#DCE6D9;          /* respiro de la galería */
   --oscuro:#13241D;
@@ -26,9 +26,9 @@
 }
 html[data-escena="ceiba"]{--fondo:#0F2A22;--tinte:#A6D77F}
 html[data-escena="colibri"]{--fondo:#0C2430;--tinte:#6EF0B0}
-html[data-escena="plantula"]{--fondo:#271B12;--tinte:#C6EC8A}
+html[data-escena="palma"]{--fondo:#15262A;--tinte:#B9DDB0}
 html[data-escena="fragmentos"]{--fondo:#16241E;--tinte:#A6D77F}
-html[data-escena="rana"]{--fondo:#132019;--tinte:#FFC233}
+html[data-escena="jaguar"]{--fondo:#1F1911;--tinte:#F0B95A}
 html[data-escena="morpho"]{--fondo:#0A1638;--tinte:#7FD6FF}
 
 *,*::before,*::after{box-sizing:border-box}

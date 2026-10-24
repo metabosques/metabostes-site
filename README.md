@@ -21,4 +21,4 @@ Usa FormSubmit y llega a amoreno@metabosques.com. La primera vez que alguien lo 
 Las fotos de campo están en `assets/fotos/` en dos tamaños: `-p.webp` (640 px, galería) y `-g.webp` (visor y portada). Se les quitaron los metadatos de ubicación y el sello de coordenadas de la cámara trampa.
 
 ## La figura por piezas
-Inspirada en *In Pieces* (species-in-pieces.com): una figura de 48 triángulos hechos con `clip-path` se rearma en una especie colombiana distinta en cada sección (ceiba, colibrí, plántula, rana dorada, mariposa morfo) y el fondo cambia de color con ella. Al hacer clic en la figura se ve la siguiente especie. Con "reducir movimiento" activado en el dispositivo, los cambios ocurren sin animación.
+Inspirada en *In Pieces* (species-in-pieces.com): una figura de 48 triángulos hechos con `clip-path` se rearma en una especie colombiana distinta en cada sección (ceiba, colibrí, palma de cera, jaguar, mariposa morfo) y el fondo cambia de color con ella. Al hacer clic en la figura se ve la siguiente especie. Con "reducir movimiento" activado en el dispositivo, los cambios ocurren sin animación.
