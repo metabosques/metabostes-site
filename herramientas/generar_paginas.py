@@ -30,7 +30,7 @@ SERVICIOS = [
     {
         "slug": "restauracion-ecologica-compensaciones",
         "nombre": "Restauración ecológica y compensaciones",
-        "titulo": "Restauración ecológica y compensaciones bióticas en Colombia",
+        "titulo": "Restauración ecológica y compensaciones bióticas en toda Colombia",
         "descripcion": "Diseñamos, tramitamos y ejecutamos planes de compensación biótica y forestal con restauración activa, pasiva y enriquecimiento con especies nativas en Colombia.",
         "tipo": "Restauración ecológica y compensación ambiental",
         "intro": "Cuando un proyecto genera una obligación de compensación, la autoridad ambiental exige un plan técnico, su ejecución en campo y pruebas de que la restauración funciona. Nos encargamos de las tres cosas.",
@@ -48,8 +48,8 @@ SERVICIOS = [
     {
         "slug": "aprovechamiento-forestal",
         "nombre": "Aprovechamientos forestales sostenibles",
-        "titulo": "Aprovechamiento forestal: inventario, permiso y salvoconductos",
-        "descripcion": "Formulamos, tramitamos y ejecutamos planes de aprovechamiento forestal ante las corporaciones autónomas regionales: inventario, marcación, cubicación, permiso y salvoconductos.",
+        "titulo": "Aprovechamiento forestal en Colombia: inventario, permiso y salvoconductos",
+        "descripcion": "Formulamos, tramitamos y ejecutamos planes de aprovechamiento forestal ante las corporaciones autónomas regionales de todo el país: inventario, marcación, cubicación, permiso y salvoconductos.",
         "tipo": "Aprovechamiento forestal",
         "intro": "Talar o intervenir árboles para un proyecto requiere un permiso de aprovechamiento forestal. Preparamos la información técnica que pide la corporación, acompañamos el trámite y ejecutamos el aprovechamiento cumpliendo lo autorizado.",
         "incluye": [
@@ -66,7 +66,7 @@ SERVICIOS = [
     {
         "slug": "consultoria-ambiental",
         "nombre": "Consultoría ambiental",
-        "titulo": "Consultoría ambiental: estudios de impacto, planes de manejo y SIG",
+        "titulo": "Consultoría ambiental en Colombia: estudios de impacto, planes de manejo y SIG",
         "descripcion": "Estudios de impacto ambiental, planes de manejo, monitoreo de fauna y flora y cartografía SIG para licencias y permisos ambientales en Colombia.",
         "tipo": "Consultoría ambiental",
         "intro": "Acompañamos a empresas y entidades desde la línea base hasta la obtención y el seguimiento de licencias y permisos ambientales, con trabajo de campo propio y análisis espacial.",
@@ -84,7 +84,7 @@ SERVICIOS = [
     {
         "slug": "mantenimiento-obras-ambientales",
         "nombre": "Mantenimiento y obras ambientales",
-        "titulo": "Mantenimiento de zonas verdes, compensaciones y obras ambientales",
+        "titulo": "Mantenimiento de áreas de compensación y obras ambientales en Colombia",
         "descripcion": "Mantenimiento de áreas verdes y zonas de compensación, rocería, revegetalización, limpieza de paneles solares y obras civiles menores con criterio paisajístico.",
         "tipo": "Mantenimiento ambiental",
         "intro": "Una siembra o una zona verde sin mantenimiento se pierde. Ofrecemos cuadrillas con supervisión técnica para conservar las áreas establecidas y la infraestructura asociada.",
@@ -102,7 +102,7 @@ SERVICIOS = [
     {
         "slug": "naturaunidad",
         "nombre": "NaturaUnidad",
-        "titulo": "NaturaUnidad: soluciones basadas en la naturaleza para carbono y biodiversidad",
+        "titulo": "NaturaUnidad: soluciones basadas en la naturaleza para carbono y biodiversidad en Colombia",
         "descripcion": "Soluciones basadas en la naturaleza para metas corporativas de carbono y biodiversidad, con línea base, indicadores verificables y reportes de sostenibilidad.",
         "tipo": "Soluciones basadas en la naturaleza",
         "intro": "NaturaUnidad es nuestra línea para empresas que quieren ir más allá de la obligación legal: proyectos de restauración voluntaria con resultados que se pueden medir y reportar.",
@@ -120,7 +120,7 @@ SERVICIOS = [
 
 FAQ = [
     ("¿En qué regiones de Colombia trabajan?",
-     "Tenemos sede en Medellín y ejecutamos proyectos en todo el país. Hemos trabajado en franjas costeras, humedales y sabanas, con vivero, siembra y monitoreo propios."),
+     "En todo Colombia. Llevamos el equipo técnico y de campo a cualquier región del país: Caribe, Andina, Pacífico, Orinoquía y Amazonía. Hemos trabajado en franjas costeras, humedales y sabanas. Nuestra sede administrativa está en Medellín."),
     ("¿Qué es una compensación biótica y quién debe hacerla?",
      "Es la obligación de restaurar o conservar un área equivalente a la que un proyecto afecta. La deben cumplir las empresas cuya licencia o permiso ambiental la exige, por ejemplo por pérdida de biodiversidad o por un aprovechamiento forestal."),
     ("¿Hacen el trámite ante la corporación autónoma regional?",
@@ -134,6 +134,8 @@ FAQ = [
     ("¿Qué es NaturaUnidad?",
      "Es nuestra línea de soluciones basadas en la naturaleza para empresas con metas voluntarias de carbono y biodiversidad, con indicadores verificables y reportes de sostenibilidad."),
 ]
+
+AREA = [{"@type": "Country", "name": "Colombia"}] + [{"@type": "Place", "name": f"Región {r} de Colombia"} for r in ("Caribe", "Andina", "Pacífica", "Orinoquía", "Amazonía")]
 
 e = html.escape
 
@@ -158,7 +160,7 @@ def pie_html():
   <footer class="pie">
     <div class="pie-bloque">
       <p class="pie-marca">Metabosques S.A.S.</p>
-      <p>Restauración ecológica y gestión forestal. Medellín, Colombia.</p>
+      <p>Servicios ambientales en toda Colombia. Sede administrativa en Medellín.</p>
       <p><a href="https://wa.me/{WA}" target="_blank" rel="noopener">{TEL}</a> · <a href="mailto:{CORREO}">{CORREO}</a></p>{redes_html()}
     </div>
     <nav class="pie-bloque" aria-label="Servicios">
@@ -181,14 +183,14 @@ def negocio():
         "@id": f"{SITIO}/#negocio",
         "name": "Metabosques S.A.S.",
         "alternateName": "Metabosques",
-        "description": "Empresa ambiental colombiana con sede en Medellín. Restauración ecológica, compensaciones bióticas, aprovechamiento forestal, consultoría ambiental y mantenimiento de áreas de compensación.",
+        "description": "Empresa ambiental colombiana con cobertura en todo el país y sede administrativa en Medellín. Restauración ecológica, compensaciones bióticas, aprovechamiento forestal, consultoría ambiental y mantenimiento de áreas de compensación. Presta servicios en todo el territorio colombiano.",
         "url": f"{SITIO}/",
         "logo": f"{SITIO}/assets/logo.png",
         "image": f"{SITIO}/assets/og-image.jpg",
         "email": CORREO,
         "telephone": "+573007925238",
         "address": {"@type": "PostalAddress", "addressLocality": "Medellín", "addressRegion": "Antioquia", "addressCountry": "CO"},
-        "areaServed": {"@type": "Country", "name": "Colombia"},
+        "areaServed": AREA,
         "priceRange": "Cotización por proyecto",
         "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00"},
         "contactPoint": {"@type": "ContactPoint", "contactType": "Ventas", "telephone": "+573007925238", "email": CORREO, "availableLanguage": "es"},
@@ -212,7 +214,7 @@ def servicio_ld(s):
         "description": s["descripcion"],
         "url": f"{SITIO}/servicios/{s['slug']}/",
         "provider": {"@id": f"{SITIO}/#negocio"},
-        "areaServed": {"@type": "Country", "name": "Colombia"},
+        "areaServed": AREA,
         "audience": {"@type": "BusinessAudience", "name": s["para"]},
     }
 
@@ -302,6 +304,9 @@ def pagina_servicio(s):
       <p>{e(s['para'])}</p>
       <p>{e(s['ecosistemas'])}</p>
 
+      <h2>Dónde prestamos el servicio</h2>
+      <p>En todo Colombia: Caribe, región Andina, Pacífico, Orinoquía y Amazonía. Llevamos el equipo técnico y de campo al predio y hacemos el trámite ante la autoridad ambiental que corresponda en cada región, sea una corporación autónoma regional, una autoridad ambiental urbana o la ANLA. La sede administrativa está en Medellín.</p>
+
       <h2>Cómo trabajamos</h2>
       <p>Un solo equipo responde por el proyecto: visita y diagnóstico, diseño y trámite ante la autoridad ambiental, ejecución en campo, y monitoreo con informes de cumplimiento. Respondemos las solicitudes en un día hábil.</p>
 
@@ -369,7 +374,7 @@ def main():
 
     # llms.txt: resumen legible para buscadores de IA
     lineas = ["# Metabosques S.A.S.", "",
-              "> Empresa ambiental colombiana con sede en Medellín. Diseña, tramita y ejecuta compensaciones bióticas, restauración ecológica, aprovechamiento forestal, consultoría ambiental y mantenimiento de áreas de compensación para empresas y entidades públicas en toda Colombia.",
+              "> Empresa ambiental colombiana que presta servicios en todo el país (sede administrativa en Medellín). Diseña, tramita y ejecuta compensaciones bióticas, restauración ecológica, aprovechamiento forestal, consultoría ambiental y mantenimiento de áreas de compensación para empresas y entidades públicas en toda Colombia.",
               "", f"Contacto: {TEL} (WhatsApp) · {CORREO} · {SITIO}/#contacto",
               "Cifras: 250 hectáreas restauradas y 120.000 árboles sembrados.", "", "## Servicios", ""]
     lineas += [f"- [{s['nombre']}]({SITIO}/servicios/{s['slug']}/): {s['descripcion']}" for s in SERVICIOS]
